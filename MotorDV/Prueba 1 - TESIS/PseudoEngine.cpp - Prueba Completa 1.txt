@@ -1,0 +1,118 @@
+#include <iostream>
+#include "Math/Vec2.h"
+#include "Math/MathUtils.h"
+#include "Raycast/Raycast.h"
+
+#define SDL_MAIN_HANDLED
+#include <SDL.h>
+
+#include "Render/Render.h"
+#include "Input/Input.h" // << NUEVO
+
+// ESTAMOS USANDO SDL2
+
+int main()
+{
+    std::cout << "=== Pruebas de MathUtils ===\n";
+    float x = 25.0f;
+    std::cout << "Raíz cuadrada aproximada de " << x << ": " << sqrt_approx(x) << "\n";
+    std::cout << "Inversa de raíz cuadrada aproximada de " << x << ": " << inv_sqrt_approx(x) << "\n";
+
+    float angulo = 1.0f;
+    std::cout << "Seno aproximado de " << angulo << ": " << sin_approx(angulo) << "\n";
+    std::cout << "Coseno aproximado de " << angulo << ": " << cos_approx(angulo) << "\n";
+
+    std::cout << "\n=== Pruebas de Vec2 ===\n";
+    Vec2 a(3.0f, 4.0f);
+    Vec2 b(1.0f, 2.0f);
+
+    Vec2 suma = a + b;
+    Vec2 resta = a - b;
+    Vec2 productoEscalar = a * 2.0f;
+    float magnitud = a.magnitude();
+    Vec2 normalizado = a.normalized();
+
+    std::cout << "a = (" << a.x << ", " << a.y << ")\n";
+    std::cout << "b = (" << b.x << ", " << b.y << ")\n";
+    std::cout << "a + b = (" << suma.x << ", " << suma.y << ")\n";
+    std::cout << "a - b = (" << resta.x << ", " << resta.y << ")\n";
+    std::cout << "a * 2 = (" << productoEscalar.x << ", " << productoEscalar.y << ")\n";
+    std::cout << "Magnitud de a: " << magnitud << "\n";
+    std::cout << "a normalizado = (" << normalizado.x << ", " << normalizado.y << ")\n";
+
+    std::cout << "\n=== Pruebas de Raycast ===\n";
+    Ray ray;
+    ray.origin = Vec2(0.0f, 0.0f);
+    ray.direction = Vec2(1.0f, 1.0f).normalized();
+
+    LineSegment segment;
+    segment.start = Vec2(2.0f, 0.0f);
+    segment.end = Vec2(2.0f, 5.0f);
+
+    RaycastResult hit = Raycast(ray, segment);
+
+    if (hit.hit)
+    {
+        std::cout << "Intersección detectada en: (" << hit.point.x << ", " << hit.point.y << ")\n";
+        std::cout << "Distancia desde el origen del rayo: " << hit.distance << "\n";
+    }
+    else
+    {
+        std::cout << "No hay intersección entre el rayo y el segmento.\n";
+    }
+
+    std::cout << "=== Prueba módulo Render con textura PNG ===\n";
+    Render render;
+
+    if (!render.init("Prueba Render PNG", 800, 600))
+    {
+        std::cerr << "Fallo al inicializar Render\n";
+        return 1;
+    }
+
+    if (!Input::Init()) // << NUEVO
+    {
+        std::cerr << "Fallo al inicializar Input\n";
+        render.destroy();
+        return 1;
+    }
+
+    SDL_Texture* texture = render.loadTexture("D:\\Personal\\MotorDV\\PseudoEngine\\Render\\Textures\\Cyberpunk2077.png");
+    if (!texture)
+    {
+        std::cerr << "Fallo al cargar textura PNG\n";
+        render.destroy();
+        Input::Shutdown(); // << NUEVO
+        return 1;
+    }
+
+    bool running = true;
+    SDL_Event event;
+
+    while (running)
+    {
+        while (SDL_PollEvent(&event))
+        {
+            if (event.type == SDL_QUIT)
+                running = false;
+        }
+
+        Input::ProcessEvents(); // << NUEVO
+
+        if (Input::IsKeyPressed(SDL_SCANCODE_ESCAPE)) // << NUEVO
+        {
+            std::cout << "ESC presionado. Cerrando...\n";
+            running = false;
+        }
+
+        render.clear();
+        render.drawTexture(texture, 50, 100, 707, 353);
+        render.present();
+    }
+
+    SDL_DestroyTexture(texture);
+    render.destroy();
+    Input::Shutdown(); // << NUEVO
+
+    return 0;
+}

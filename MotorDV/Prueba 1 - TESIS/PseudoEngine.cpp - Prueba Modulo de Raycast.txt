@@ -1,0 +1,40 @@
+#include <iostream>
+#include "Raycast/Raycast.h"
+
+int main()
+{
+    std::cout << "================================\n";
+    std::cout << "    PRUEBA DEL MODULO RAYCAST\n";
+    std::cout << "================================\n\n";
+
+    // Creamos un rayo con origen en (0,0) y dirección hacia (1,1)
+    Ray ray;
+    ray.origin = Vec2(0.0f, 0.0f);
+    ray.direction = Vec2(1.0f, 1.0f).normalized();
+
+    // Creamos un segmento de línea de (1,0) a (1,2)
+    LineSegment segment;
+    segment.start = Vec2(1.0f, 0.0f);
+    segment.end = Vec2(1.0f, 2.0f);
+
+    std::cout << "Rayo desde (" << ray.origin.x << ", " << ray.origin.y << ") ";
+    std::cout << "en dirección normalizada (" << ray.direction.x << ", " << ray.direction.y << ")\n";
+    std::cout << "Segmento desde (" << segment.start.x << ", " << segment.start.y << ") ";
+    std::cout << "hasta (" << segment.end.x << ", " << segment.end.y << ")\n\n";
+
+    RaycastResult result = Raycast(ray, segment);
+
+    if (result.hit)
+    {
+        std::cout << "Impacto detectado!\n";
+        std::cout << "Punto de impacto: (" << result.point.x << ", " << result.point.y << ")\n";
+        std::cout << "Distancia desde origen del rayo: " << result.distance << "\n";
+    }
+    else
+    {
+        std::cout << "No se detecto impacto.\n";
+    }
+
+
+    return 0;
+}
