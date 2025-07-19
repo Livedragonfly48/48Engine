@@ -1,0 +1,14 @@
+﻿  PseudoEngine.cpp
+C:\Users\OctoPC\Documents\Ilann Emilio Maya Campos___GitHub\48Engine\PseudoEngine48 - Motor\PseudoEngine\PseudoEngine.cpp(8,9): warning C4005: 'SDL_MAIN_HANDLED': redefinición de macro
+      C:\Users\OctoPC\Documents\Ilann Emilio Maya Campos___GitHub\48Engine\PseudoEngine48 - Motor\PseudoEngine\PseudoEngine.cpp(8,9):
+      'SDL_MAIN_HANDLED' declarado previamente en la línea de comandos
+  
+C:\Users\OctoPC\Documents\Ilann Emilio Maya Campos___GitHub\48Engine\PseudoEngine48 - Motor\PseudoEngine\PseudoEngine.cpp(33,23): warning C4244: 'return': conversión de 'double' a 'float'; posible pérdida de datos
+  Input.cpp
+  MathUtils.cpp
+  Vec2.cpp
+C:\Users\OctoPC\Documents\Ilann Emilio Maya Campos___GitHub\48Engine\PseudoEngine48 - Motor\PseudoEngine\PseudoEngineModules\ModulesLowLevel\Math\Vec2.cpp(59,18): warning C4244: 'return': conversión de 'double' a 'float'; posible pérdida de datos
+  Raycast.cpp
+  Render.cpp
+  Generando código...
+  PseudoEngine.vcxproj -> C:\Users\OctoPC\Documents\Ilann Emilio Maya Campos___GitHub\48Engine\PseudoEngine48 - Motor\PseudoEngine\x64\Debug\PseudoEngine.exe
