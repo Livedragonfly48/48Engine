@@ -1,5 +1,5 @@
 #include "Input.h"
-#include <cstring> // Para memcpy
+#include <cstring> 
 
 const Uint8* Input::currentKeyStates = nullptr;
 Uint8* Input::previousKeyStates = nullptr;
@@ -17,11 +17,11 @@ bool Input::Init()
 
 void Input::ProcessEvents()
 {
-    // Guardamos el estado anterior
+   
     std::memcpy(previousKeyStates, currentKeyStates, numKeys);
 
-    // Actualizamos el estado actual
-    SDL_PumpEvents(); // Actualiza SDL_GetKeyboardState
+    
+    SDL_PumpEvents(); 
     currentKeyStates = SDL_GetKeyboardState(nullptr);
 }
 
