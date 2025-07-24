@@ -84,4 +84,16 @@ struct Vec2 {
 
 	float dot(const Vec2& other) const;
 
+
+
+
+
+	// Retorna la magnitud al cuadrado 
+	float lengthSquared() const
+	{
+		return x * x + y * y;
+	}
+
+
+
 };

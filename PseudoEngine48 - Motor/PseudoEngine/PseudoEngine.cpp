@@ -1,198 +1,103 @@
-#include <iostream>
 #include "PseudoEngineModules/ModulesLowLevel/Math/Vec2.h"
 #include "PseudoEngineModules/ModulesLowLevel/Math/MathUtils.h"
-#include "PseudoEngineModules/ModulesLowLevel/Raycast/Raycast.h"
 #include "PseudoEngineModules/ModulesLowLevel/Input/Input.h"
 #include "PseudoEngineModules/ModulesLowLevel/Render/Render.h"
+#include "PseudoEngineModules/ModulesLowLevel/Collision/Collider.h"
+#include "PseudoEngineModules/ModulesLowLevel/Collision/CollisionSystem.h"
 
 #define SDL_MAIN_HANDLED
 #include <SDL.h>
-
-const int MAP_WIDTH = 11;
-const int MAP_HEIGHT = 11;
-const int TILE_SIZE = 48;
-const int SCREEN_WIDTH = 640;
-const int SCREEN_HEIGHT = 480;
-
-
-int map[MAP_HEIGHT][MAP_WIDTH] = {
-    {1,1,1,1,1,1,1,1,1,1,1},
-    {1,0,0,0,0,1,0,0,0,0,1},
-    {1,0,1,1,0,1,0,1,1,0,1},
-    {1,0,1,0,0,0,0,0,1,0,1},
-    {1,0,1,0,1,1,1,0,1,0,1},
-    {1,0,0,0,1,0,1,0,0,0,1},
-    {1,1,1,0,1,0,1,1,1,0,1},
-    {1,0,0,0,0,0,0,0,1,0,1},
-    {1,0,1,1,1,1,1,0,1,0,1},
-    {1,0,0,0,0,0,0,0,0,0,1},
-    {1,1,1,1,1,1,1,1,1,1,1},
-};
-
-float degToRad(float deg) {
-    return deg * M_PI / 180.0f;
-}
+#include <iostream>
 
 int main()
 {
     Render render;
-    if (!render.init("Prueba con todos los modulos para Pres", SCREEN_WIDTH, SCREEN_HEIGHT))
+    if (!render.init("Test AABB Collision", 800, 600))
     {
-        std::cerr << "Error al iniciar SDL\n";
+        std::cerr << "Error inicializando SDL\n";
         return 1;
     }
 
     if (!Input::Init())
     {
-        std::cerr << "Error al iniciar Input\n";
+        std::cerr << "Error inicializando Input\n";
         return 1;
     }
 
-    // Cargar texturas
-    SDL_Texture* wallTexture = render.loadTexture("C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Render\\Textures\\Pared48.png");
-    SDL_Texture* floorTexture = render.loadTexture("C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Render\\Textures\\Suelo48.png");
-    if (!wallTexture || !floorTexture)
-    {
-        std::cerr << "Error al cargar texturas\n";
-        return 1;
-    }
 
-    Vec2 playerPos(3.0f, 3.0f);
-    float playerAngle = 0.0f;
-    float fov = degToRad(60.0f);
-    float moveSpeed = 3.0f;
-    float rotSpeed = 2.0f;
+    Vec2 playerPos(100.0f, 300.0f);
+    Vec2 playerSize(50.0f, 50.0f);
+    float playerSpeed = 200.0f;
 
-    Uint32 lastTime = SDL_GetTicks();
+
+    Vec2 wallPos(400.0f, 300.0f);
+    Vec2 wallSize(100.0f, 100.0f);
+    AABB wallBox(wallPos, wallSize * 0.5f);
+
+    Uint32 lastTicks = SDL_GetTicks();
     bool running = true;
 
     while (running)
     {
-        Uint32 currentTime = SDL_GetTicks();
-        float deltaTime = (currentTime - lastTime) / 1000.0f;
-        lastTime = currentTime;
+        Uint32 currentTicks = SDL_GetTicks();
+        float deltaTime = (currentTicks - lastTicks) / 1000.0f;
+        lastTicks = currentTicks;
 
         Input::ProcessEvents();
+
         if (Input::IsKeyPressed(SDL_SCANCODE_ESCAPE))
             running = false;
 
-        if (Input::IsKeyHeld(SDL_SCANCODE_W))
-        {
-            Vec2 newPos = playerPos + Vec2(std::cos(playerAngle), std::sin(playerAngle)) * moveSpeed * deltaTime;
-            if (map[int(newPos.y)][int(newPos.x)] == 0) playerPos = newPos;
-        }
-        if (Input::IsKeyHeld(SDL_SCANCODE_S))
-        {
-            Vec2 newPos = playerPos - Vec2(std::cos(playerAngle), std::sin(playerAngle)) * moveSpeed * deltaTime;
-            if (map[int(newPos.y)][int(newPos.x)] == 0) playerPos = newPos;
-        }
+
+        float moveX = 0.0f;
         if (Input::IsKeyHeld(SDL_SCANCODE_A))
-            playerAngle -= rotSpeed * deltaTime;
+            moveX -= playerSpeed * deltaTime;
         if (Input::IsKeyHeld(SDL_SCANCODE_D))
-            playerAngle += rotSpeed * deltaTime;
+            moveX += playerSpeed * deltaTime;
+
+        Vec2 tentativePos = playerPos + Vec2(moveX, 0.0f);
+        AABB tentativeBox(tentativePos, playerSize * 0.5f);
+
+
+        if (!AABBvsAABB(tentativeBox, wallBox).collided)
+        {
+            playerPos = tentativePos;
+        }
+
 
         render.clear();
 
-        for (int x = 0; x < SCREEN_WIDTH; ++x)
-        {
-            float rayAngle = (playerAngle - fov / 2.0f) + (float(x) / SCREEN_WIDTH) * fov;
-            Vec2 rayDir(std::cos(rayAngle), std::sin(rayAngle));
 
-            int mapX = int(playerPos.x);
-            int mapY = int(playerPos.y);
+        SDL_SetRenderDrawColor(render.getRenderer(), 0, 0, 0, 255);
+        SDL_RenderClear(render.getRenderer());
 
-            float sideDistX, sideDistY;
-            float deltaDistX = (rayDir.x == 0) ? 1e30f : std::abs(1 / rayDir.x);
-            float deltaDistY = (rayDir.y == 0) ? 1e30f : std::abs(1 / rayDir.y);
-            float perpWallDist;
 
-            int stepX, stepY;
-            bool hit = false;
-            int side;
+        SDL_SetRenderDrawColor(render.getRenderer(), 255, 255, 255, 255);
+        SDL_Rect playerRect = {
+            int(playerPos.x - playerSize.x * 0.5f),
+            int(playerPos.y - playerSize.y * 0.5f),
+            int(playerSize.x),
+            int(playerSize.y)
+        };
+        SDL_RenderFillRect(render.getRenderer(), &playerRect);
 
-            if (rayDir.x < 0)
-            {
-                stepX = -1;
-                sideDistX = (playerPos.x - mapX) * deltaDistX;
-            }
-            else
-            {
-                stepX = 1;
-                sideDistX = (mapX + 1.0f - playerPos.x) * deltaDistX;
-            }
-            if (rayDir.y < 0)
-            {
-                stepY = -1;
-                sideDistY = (playerPos.y - mapY) * deltaDistY;
-            }
-            else
-            {
-                stepY = 1;
-                sideDistY = (mapY + 1.0f - playerPos.y) * deltaDistY;
-            }
 
-            while (!hit)
-            {
-                if (sideDistX < sideDistY)
-                {
-                    sideDistX += deltaDistX;
-                    mapX += stepX;
-                    side = 0;
-                }
-                else
-                {
-                    sideDistY += deltaDistY;
-                    mapY += stepY;
-                    side = 1;
-                }
-                if (mapY >= 0 && mapY < MAP_HEIGHT && mapX >= 0 && mapX < MAP_WIDTH)
-                {
-                    if (map[mapY][mapX] == 1)
-                        hit = true;
-                }
-                else
-                {
-                    hit = true;
-                }
-            }
-
-            if (side == 0)
-                perpWallDist = (sideDistX - deltaDistX);
-            else
-                perpWallDist = (sideDistY - deltaDistY);
-
-            int lineHeight = (int)(SCREEN_HEIGHT / perpWallDist);
-            int drawStart = -lineHeight / 2 + SCREEN_HEIGHT / 2;
-            if (drawStart < 0) drawStart = 0;
-            int drawEnd = lineHeight / 2 + SCREEN_HEIGHT / 2;
-            if (drawEnd >= SCREEN_HEIGHT) drawEnd = SCREEN_HEIGHT - 1;
-
-            float wallX;
-            if (side == 0)
-                wallX = playerPos.y + perpWallDist * rayDir.y;
-            else
-                wallX = playerPos.x + perpWallDist * rayDir.x;
-            wallX -= std::floor(wallX);
-
-            int texWidth = 48;
-            int texX = int(wallX * float(texWidth));
-            if (side == 0 && rayDir.x > 0) texX = texWidth - texX - 1;
-            if (side == 1 && rayDir.y < 0) texX = texWidth - texX - 1;
-
-            SDL_Rect srcRect = { texX, 0, 1, 48 };
-            SDL_Rect dstRect = { x, drawStart, 1, drawEnd - drawStart };
-            SDL_RenderCopy(render.getRenderer(), wallTexture, &srcRect, &dstRect);
-
-            
-            SDL_Rect floorSrc = { 0, 0, 1, 1 };
-            SDL_Rect floorDst = { x, drawEnd, 1, SCREEN_HEIGHT - drawEnd };
-            SDL_RenderCopy(render.getRenderer(), floorTexture, &floorSrc, &floorDst);
-        }
+        SDL_SetRenderDrawColor(render.getRenderer(), 255, 0, 0, 255);
+        SDL_Rect wallRect = {
+            int(wallPos.x - wallSize.x * 0.5f),
+            int(wallPos.y - wallSize.y * 0.5f),
+            int(wallSize.x),
+            int(wallSize.y)
+        };
+        SDL_RenderFillRect(render.getRenderer(), &wallRect);
 
         render.present();
+
+        SDL_Delay(16);
     }
 
     Input::Shutdown();
     render.destroy();
+
     return 0;
 }

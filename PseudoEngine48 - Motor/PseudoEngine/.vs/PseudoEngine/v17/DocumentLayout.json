@@ -3,8 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|solutionrelative:PseudoEngine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Collision\\CollisionSystem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|solutionrelative:PseudoEngineModules\\ModulesLowLevel\\Collision\\CollisionSystem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Collision\\CollisionSystem.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|solutionrelative:PseudoEngineModules\\ModulesLowLevel\\Collision\\CollisionSystem.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Collision\\Collider.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|solutionrelative:PseudoEngineModules\\ModulesLowLevel\\Collision\\Collider.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Math\\Vec2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|solutionrelative:PseudoEngineModules\\ModulesLowLevel\\Math\\Vec2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Math\\MathUtils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|solutionrelative:PseudoEngineModules\\ModulesLowLevel\\Math\\MathUtils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Input\\Input.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|solutionrelative:PseudoEngineModules\\ModulesLowLevel\\Input\\Input.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Render\\Render.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|solutionrelative:PseudoEngineModules\\ModulesLowLevel\\Render\\Render.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Raycast\\Raycast.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|solutionrelative:PseudoEngineModules\\ModulesLowLevel\\Raycast\\Raycast.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Raycast\\Raycast.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|solutionrelative:PseudoEngineModules\\ModulesLowLevel\\Raycast\\Raycast.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Math\\MathUtils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|solutionrelative:PseudoEngineModules\\ModulesLowLevel\\Math\\MathUtils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Math\\Vec2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|solutionrelative:PseudoEngineModules\\ModulesLowLevel\\Math\\Vec2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Input\\Input.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -13,34 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Render\\Render.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|solutionrelative:PseudoEngineModules\\ModulesLowLevel\\Render\\Render.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Render\\Render.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|solutionrelative:PseudoEngineModules\\ModulesLowLevel\\Render\\Render.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Raycast\\Raycast.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|solutionrelative:PseudoEngineModules\\ModulesLowLevel\\Raycast\\Raycast.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Raycast\\Raycast.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|solutionrelative:PseudoEngineModules\\ModulesLowLevel\\Raycast\\Raycast.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Math\\Vec2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|solutionrelative:PseudoEngineModules\\ModulesLowLevel\\Math\\Vec2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Math\\Vec2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|solutionrelative:PseudoEngineModules\\ModulesLowLevel\\Math\\Vec2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Math\\MathUtils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|solutionrelative:PseudoEngineModules\\ModulesLowLevel\\Math\\MathUtils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{33D3DA6E-3B20-4087-B928-AD15E2AEAB59}|PseudoEngine.vcxproj|solutionrelative:PseudoEngine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Personal\\MotorDV\\PseudoEngineEditor\\PseudoEngineEditor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
@@ -80,37 +96,87 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 18,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Input.cpp",
-              "DocumentMoniker": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Input\\Input.cpp",
-              "RelativeDocumentMoniker": "PseudoEngineModules\\ModulesLowLevel\\Input\\Input.cpp",
-              "ToolTip": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Input\\Input.cpp",
-              "RelativeToolTip": "PseudoEngineModules\\ModulesLowLevel\\Input\\Input.cpp",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABMAAAADAAAAAAAAAA==",
+              "Title": "CollisionSystem.cpp",
+              "DocumentMoniker": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Collision\\CollisionSystem.cpp",
+              "RelativeDocumentMoniker": "PseudoEngineModules\\ModulesLowLevel\\Collision\\CollisionSystem.cpp",
+              "ToolTip": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Collision\\CollisionSystem.cpp",
+              "RelativeToolTip": "PseudoEngineModules\\ModulesLowLevel\\Collision\\CollisionSystem.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-23T02:57:00.404Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Input.h",
-              "DocumentMoniker": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Input\\Input.h",
-              "RelativeDocumentMoniker": "PseudoEngineModules\\ModulesLowLevel\\Input\\Input.h",
-              "ToolTip": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Input\\Input.h",
-              "RelativeToolTip": "PseudoEngineModules\\ModulesLowLevel\\Input\\Input.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-07-23T02:56:51.679Z",
+              "WhenOpened": "2025-07-23T19:47:37.149Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "CollisionSystem.h",
+              "DocumentMoniker": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Collision\\CollisionSystem.h",
+              "RelativeDocumentMoniker": "PseudoEngineModules\\ModulesLowLevel\\Collision\\CollisionSystem.h",
+              "ToolTip": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Collision\\CollisionSystem.h",
+              "RelativeToolTip": "PseudoEngineModules\\ModulesLowLevel\\Collision\\CollisionSystem.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-07-23T19:47:33.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Collider.h",
+              "DocumentMoniker": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Collision\\Collider.h",
+              "RelativeDocumentMoniker": "PseudoEngineModules\\ModulesLowLevel\\Collision\\Collider.h",
+              "ToolTip": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Collision\\Collider.h",
+              "RelativeToolTip": "PseudoEngineModules\\ModulesLowLevel\\Collision\\Collider.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-07-23T19:47:26.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MathUtils.h",
+              "DocumentMoniker": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Math\\MathUtils.h",
+              "RelativeDocumentMoniker": "PseudoEngineModules\\ModulesLowLevel\\Math\\MathUtils.h",
+              "ToolTip": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Math\\MathUtils.h",
+              "RelativeToolTip": "PseudoEngineModules\\ModulesLowLevel\\Math\\MathUtils.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-07-23T19:09:49.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Input.cpp",
+              "DocumentMoniker": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Input\\Input.cpp",
+              "RelativeDocumentMoniker": "PseudoEngineModules\\ModulesLowLevel\\Input\\Input.cpp",
+              "ToolTip": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Input\\Input.cpp",
+              "RelativeToolTip": "PseudoEngineModules\\ModulesLowLevel\\Input\\Input.cpp",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABMAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-07-23T02:57:00.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Input.h",
+              "DocumentMoniker": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Input\\Input.h",
+              "RelativeDocumentMoniker": "PseudoEngineModules\\ModulesLowLevel\\Input\\Input.h",
+              "ToolTip": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Input\\Input.h",
+              "RelativeToolTip": "PseudoEngineModules\\ModulesLowLevel\\Input\\Input.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-07-23T02:56:51.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Render.cpp",
               "DocumentMoniker": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Render\\Render.cpp",
               "RelativeDocumentMoniker": "PseudoEngineModules\\ModulesLowLevel\\Render\\Render.cpp",
@@ -118,12 +184,11 @@
               "RelativeToolTip": "PseudoEngineModules\\ModulesLowLevel\\Render\\Render.cpp",
               "ViewState": "AgIAAFcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-23T02:54:50.756Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-23T02:54:50.756Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Render.h",
               "DocumentMoniker": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Render\\Render.h",
               "RelativeDocumentMoniker": "PseudoEngineModules\\ModulesLowLevel\\Render\\Render.h",
@@ -131,25 +196,23 @@
               "RelativeToolTip": "PseudoEngineModules\\ModulesLowLevel\\Render\\Render.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-07-23T02:53:43.252Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-23T02:53:43.252Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "Raycast.cpp",
               "DocumentMoniker": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Raycast\\Raycast.cpp",
               "RelativeDocumentMoniker": "PseudoEngineModules\\ModulesLowLevel\\Raycast\\Raycast.cpp",
               "ToolTip": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Raycast\\Raycast.cpp",
               "RelativeToolTip": "PseudoEngineModules\\ModulesLowLevel\\Raycast\\Raycast.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-23T02:51:55.138Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-23T02:51:55.138Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Raycast.h",
               "DocumentMoniker": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Raycast\\Raycast.h",
               "RelativeDocumentMoniker": "PseudoEngineModules\\ModulesLowLevel\\Raycast\\Raycast.h",
@@ -157,12 +220,11 @@
               "RelativeToolTip": "PseudoEngineModules\\ModulesLowLevel\\Raycast\\Raycast.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-07-23T02:51:44.273Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-23T02:51:44.273Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "Vec2.cpp",
               "DocumentMoniker": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Math\\Vec2.cpp",
               "RelativeDocumentMoniker": "PseudoEngineModules\\ModulesLowLevel\\Math\\Vec2.cpp",
@@ -170,38 +232,36 @@
               "RelativeToolTip": "PseudoEngineModules\\ModulesLowLevel\\Math\\Vec2.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-23T02:44:47.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-23T02:44:47.876Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "Vec2.h",
               "DocumentMoniker": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Math\\Vec2.h",
               "RelativeDocumentMoniker": "PseudoEngineModules\\ModulesLowLevel\\Math\\Vec2.h",
               "ToolTip": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Math\\Vec2.h",
               "RelativeToolTip": "PseudoEngineModules\\ModulesLowLevel\\Math\\Vec2.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAFoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-07-23T02:44:31.13Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "MathUtils.cpp",
               "DocumentMoniker": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Math\\MathUtils.cpp",
               "RelativeDocumentMoniker": "PseudoEngineModules\\ModulesLowLevel\\Math\\MathUtils.cpp",
               "ToolTip": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngineModules\\ModulesLowLevel\\Math\\MathUtils.cpp",
               "RelativeToolTip": "PseudoEngineModules\\ModulesLowLevel\\Math\\MathUtils.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-23T02:44:04.043Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-23T02:44:04.043Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "PseudoEngineEditor.cpp",
               "DocumentMoniker": "D:\\Personal\\MotorDV\\PseudoEngineEditor\\PseudoEngineEditor.cpp",
               "ToolTip": "D:\\Personal\\MotorDV\\PseudoEngineEditor\\PseudoEngineEditor.cpp",
@@ -211,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "Raycast.h",
               "DocumentMoniker": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\MotorDV\\PseudoEngine\\Raycast\\Raycast.h",
               "RelativeDocumentMoniker": "..\\..\\MotorDV\\PseudoEngine\\Raycast\\Raycast.h",
@@ -223,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "Render.cpp",
               "DocumentMoniker": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\MotorDV\\PseudoEngine\\Render\\Render.cpp",
               "RelativeDocumentMoniker": "..\\..\\MotorDV\\PseudoEngine\\Render\\Render.cpp",
@@ -235,7 +295,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "Raycast.cpp",
               "DocumentMoniker": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\MotorDV\\PseudoEngine\\Raycast\\Raycast.cpp",
               "RelativeDocumentMoniker": "..\\..\\MotorDV\\PseudoEngine\\Raycast\\Raycast.cpp",
@@ -247,7 +307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "Render.h",
               "DocumentMoniker": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\MotorDV\\PseudoEngine\\Render\\Render.h",
               "RelativeDocumentMoniker": "..\\..\\MotorDV\\PseudoEngine\\Render\\Render.h",
@@ -259,20 +319,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "PseudoEngine.cpp",
               "DocumentMoniker": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngine.cpp",
               "RelativeDocumentMoniker": "PseudoEngine.cpp",
               "ToolTip": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\PseudoEngine48 - Motor\\PseudoEngine\\PseudoEngine.cpp",
               "RelativeToolTip": "PseudoEngine.cpp",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAwDQAAADbAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAwwCoAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-27T07:42:45.164Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "Input.h",
               "DocumentMoniker": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\MotorDV\\PseudoEngine\\Input\\Input.h",
               "RelativeDocumentMoniker": "..\\..\\MotorDV\\PseudoEngine\\Input\\Input.h",
@@ -284,7 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "Input.cpp",
               "DocumentMoniker": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\MotorDV\\PseudoEngine\\Input\\Input.cpp",
               "RelativeDocumentMoniker": "..\\..\\MotorDV\\PseudoEngine\\Input\\Input.cpp",
@@ -296,7 +356,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "Vec2.cpp",
               "DocumentMoniker": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\MotorDV\\PseudoEngine\\Math\\Vec2.cpp",
               "RelativeDocumentMoniker": "..\\..\\MotorDV\\PseudoEngine\\Math\\Vec2.cpp",
@@ -308,7 +368,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "MathUtils.cpp",
               "DocumentMoniker": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\MotorDV\\PseudoEngine\\Math\\MathUtils.cpp",
               "RelativeDocumentMoniker": "..\\..\\MotorDV\\PseudoEngine\\Math\\MathUtils.cpp",
@@ -320,7 +380,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "MathUtils.h",
               "DocumentMoniker": "C:\\Users\\OctoPC\\Documents\\Ilann Emilio Maya Campos___GitHub\\48Engine\\MotorDV\\PseudoEngine\\Math\\MathUtils.h",
               "RelativeDocumentMoniker": "..\\..\\MotorDV\\PseudoEngine\\Math\\MathUtils.h",

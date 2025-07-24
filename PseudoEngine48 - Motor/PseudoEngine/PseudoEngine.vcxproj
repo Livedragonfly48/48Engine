@@ -131,6 +131,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="PseudoEngine.cpp" />
+    <ClCompile Include="PseudoEngineModules\ModulesLowLevel\Collision\CollisionSystem.cpp" />
     <ClCompile Include="PseudoEngineModules\ModulesLowLevel\Input\Input.cpp" />
     <ClCompile Include="PseudoEngineModules\ModulesLowLevel\Math\MathUtils.cpp" />
     <ClCompile Include="PseudoEngineModules\ModulesLowLevel\Math\Vec2.cpp" />
@@ -138,6 +139,8 @@
     <ClCompile Include="PseudoEngineModules\ModulesLowLevel\Render\Render.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="PseudoEngineModules\ModulesLowLevel\Collision\Collider.h" />
+    <ClInclude Include="PseudoEngineModules\ModulesLowLevel\Collision\CollisionSystem.h" />
     <ClInclude Include="PseudoEngineModules\ModulesLowLevel\Input\Input.h" />
     <ClInclude Include="PseudoEngineModules\ModulesLowLevel\Math\MathUtils.h" />
     <ClInclude Include="PseudoEngineModules\ModulesLowLevel\Math\Vec2.h" />

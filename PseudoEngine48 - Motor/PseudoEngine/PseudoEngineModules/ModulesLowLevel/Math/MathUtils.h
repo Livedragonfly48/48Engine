@@ -7,6 +7,21 @@ inline float absf(float x);
 
 
 
+
+inline float Clamp(float value, float min, float max)
+{
+    if (value < min) return min;
+    if (value > max) return max;
+    return value;
+}
+
+
+
+
+
+
+
+
 // Raíz cuadrada aproximada
 
 float sqrt_approx(float x);     

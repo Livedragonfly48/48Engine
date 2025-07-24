@@ -3,7 +3,7 @@ C:\Users\OctoPC\Documents\Ilann Emilio Maya Campos___GitHub\48Engine\PseudoEngin
       C:\Users\OctoPC\Documents\Ilann Emilio Maya Campos___GitHub\48Engine\PseudoEngine48 - Motor\PseudoEngine\PseudoEngine.cpp(8,9):
       'SDL_MAIN_HANDLED' declarado previamente en la línea de comandos
   
-C:\Users\OctoPC\Documents\Ilann Emilio Maya Campos___GitHub\48Engine\PseudoEngine48 - Motor\PseudoEngine\PseudoEngine.cpp(33,23): warning C4244: 'return': conversión de 'double' a 'float'; posible pérdida de datos
+  CollisionSystem.cpp
   Input.cpp
   MathUtils.cpp
   Vec2.cpp
