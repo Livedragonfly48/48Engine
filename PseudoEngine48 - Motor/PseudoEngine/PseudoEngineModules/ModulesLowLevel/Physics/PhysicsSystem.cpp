@@ -1,0 +1,165 @@
+#include "PhysicsSystem.h"
+#include "../Collision/Collider.h"
+#include "../Collision/CollisionSystem.h"
+#include "../Math/Vec2.h"
+
+
+void PhysicsSystem::addBody(PhysicsBody* body)
+{
+    bodies.push_back(body);
+}
+
+
+
+void PhysicsSystem::removeBody(PhysicsBody* body)
+{
+    for (size_t i = 0; i < bodies.getSize(); ++i)
+    {
+        if (bodies[i] == body)
+        {
+            bodies.erase(i);
+            break;
+        }
+    }
+}
+
+
+
+void PhysicsSystem::update(float deltaTime)
+{
+    for (size_t i = 0; i < bodies.getSize(); ++i)
+    {
+        PhysicsBody* body = bodies[i];
+
+        body->triggerEnter = false;
+        body->triggerExit = false;
+        body->isCurrentlyColliding = false;
+
+        if (body->useGravity)
+            body->acceleration = globalGravity * body->gravityScale;
+        else
+            body->acceleration = Vec2(0, 0);
+
+        body->velocity += body->acceleration * deltaTime;
+        body->position += body->velocity * deltaTime;
+        body->updateColliderPosition();
+    }
+
+    checkCollisions();
+
+    for (size_t i = 0; i < bodies.getSize(); ++i)
+    {
+        PhysicsBody* body = bodies[i];
+        body->wasCollidingLastFrame = body->isCurrentlyColliding;
+    }
+}
+
+void PhysicsSystem::checkCollisions()
+{
+
+    for (size_t i = 0; i < bodies.getSize(); ++i)
+    {
+        PhysicsBody* a = bodies[i];
+        for (size_t j = i + 1; j < bodies.getSize(); ++j)
+        {
+            PhysicsBody* b = bodies[j];
+            CollisionResult res;
+            bool collided = false;
+
+            if (a->colliderType == ColliderType::AABB && b->colliderType == ColliderType::AABB)
+                res = AABBvsAABB(a->aabb, b->aabb);
+            else if (a->colliderType == ColliderType::Circle && b->colliderType == ColliderType::Circle)
+                res = CirclevsCircle(a->circle, b->circle);
+            else if (a->colliderType == ColliderType::AABB && b->colliderType == ColliderType::Circle)
+                res = AABBvsCircle(a->aabb, b->circle);
+            else if (a->colliderType == ColliderType::Circle && b->colliderType == ColliderType::AABB)
+                res = AABBvsCircle(b->aabb, a->circle);
+            else
+                continue;
+
+            collided = res.collided;
+
+            if (a->isTrigger || b->isTrigger)
+            {
+                if (collided)
+                {
+                    if (!a->wasCollidingLastFrame)
+                        a->triggerEnter = true;
+                    a->triggerStay = true;
+
+                    if (!b->wasCollidingLastFrame)
+                        b->triggerEnter = true;
+                    b->triggerStay = true;
+                }
+                else
+                {
+                    if (a->wasCollidingLastFrame)
+                        a->triggerExit = true;
+                    if (b->wasCollidingLastFrame)
+                        b->triggerExit = true;
+
+                    a->triggerStay = false;
+                    b->triggerStay = false;
+                }
+
+                a->isCurrentlyColliding = a->isCurrentlyColliding || collided;
+                b->isCurrentlyColliding = b->isCurrentlyColliding || collided;
+            }
+            else
+            {
+                if (collided)
+                {
+                    a->position -= res.normal * res.penetration;
+                    a->updateColliderPosition();
+
+                    if (a->useGravity && !b->useGravity)
+                        b->velocity += a->velocity * 0.5f;
+                    else if (!a->useGravity && b->useGravity)
+                        a->velocity += b->velocity * 0.5f;
+                    else
+                    {
+                        a->velocity *= 0.8f;
+                        b->velocity *= 0.8f;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+    for (size_t i = 0; i < bodies.getSize(); ++i)
+    {
+        PhysicsBody* body = bodies[i];
+
+        for (size_t j = 0; j < staticColliders.getSize(); ++j)
+        {
+            Collider* col = staticColliders[j];
+            CollisionResult res;
+            bool collided = false;
+
+            if (body->colliderType == ColliderType::AABB && col->type == ColliderType::AABB)
+                res = AABBvsAABB(body->aabb, *(AABB*)col);
+            else if (body->colliderType == ColliderType::Circle && col->type == ColliderType::Circle)
+                res = CirclevsCircle(body->circle, *(CircleCollider*)col);
+            else if (body->colliderType == ColliderType::AABB && col->type == ColliderType::Circle)
+                res = AABBvsCircle(body->aabb, *(CircleCollider*)col);
+            else if (body->colliderType == ColliderType::Circle && col->type == ColliderType::AABB)
+                res = AABBvsCircle(*(AABB*)col, body->circle);
+            else
+                continue;
+
+            collided = res.collided;
+
+            if (collided)
+            {
+                body->position -= res.normal * res.penetration;
+                body->updateColliderPosition();
+                body->velocity = Vec2(0, 0);
+            }
+        }
+    }
+}
+
+

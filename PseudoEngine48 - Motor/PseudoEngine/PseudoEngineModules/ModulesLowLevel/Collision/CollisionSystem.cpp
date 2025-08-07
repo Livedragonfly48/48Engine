@@ -30,6 +30,11 @@ CollisionResult AABBvsAABB(const AABB& a, const AABB& b)
 	return result;
 }
 
+
+
+
+
+
 CollisionResult CirclevsCircle(const CircleCollider& a, const CircleCollider& b)
 {
 	CollisionResult result;
@@ -48,6 +53,11 @@ CollisionResult CirclevsCircle(const CircleCollider& a, const CircleCollider& b)
 
 	return result;
 }
+
+
+
+
+
 
 
 CollisionResult AABBvsCircle(const AABB& box, const CircleCollider& circle)

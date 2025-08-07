@@ -135,6 +135,8 @@
     <ClCompile Include="PseudoEngineModules\ModulesLowLevel\Input\Input.cpp" />
     <ClCompile Include="PseudoEngineModules\ModulesLowLevel\Math\MathUtils.cpp" />
     <ClCompile Include="PseudoEngineModules\ModulesLowLevel\Math\Vec2.cpp" />
+    <ClCompile Include="PseudoEngineModules\ModulesLowLevel\Physics\PhysicsBody.cpp" />
+    <ClCompile Include="PseudoEngineModules\ModulesLowLevel\Physics\PhysicsSystem.cpp" />
     <ClCompile Include="PseudoEngineModules\ModulesLowLevel\Raycast\Raycast.cpp" />
     <ClCompile Include="PseudoEngineModules\ModulesLowLevel\Render\Render.cpp" />
   </ItemGroup>
@@ -144,8 +146,11 @@
     <ClInclude Include="PseudoEngineModules\ModulesLowLevel\Input\Input.h" />
     <ClInclude Include="PseudoEngineModules\ModulesLowLevel\Math\MathUtils.h" />
     <ClInclude Include="PseudoEngineModules\ModulesLowLevel\Math\Vec2.h" />
+    <ClInclude Include="PseudoEngineModules\ModulesLowLevel\Physics\PhysicsBody.h" />
+    <ClInclude Include="PseudoEngineModules\ModulesLowLevel\Physics\PhysicsSystem.h" />
     <ClInclude Include="PseudoEngineModules\ModulesLowLevel\Raycast\Raycast.h" />
     <ClInclude Include="PseudoEngineModules\ModulesLowLevel\Render\Render.h" />
+    <ClInclude Include="PseudoEngineModules\ModulesLowLevel\VectorDynam\MyVector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

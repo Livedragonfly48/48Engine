@@ -1,99 +1,27 @@
 #pragma once
 
-
 struct Vec2 {
+    float x, y;
 
-	float x, y;
+    Vec2();
+    Vec2(float x, float y);
 
+    Vec2 operator+(const Vec2& other) const;
+    Vec2& operator+=(const Vec2& other);        // <- operador compuesto suma
 
+    Vec2 operator-(const Vec2& other) const;
+    Vec2& operator-=(const Vec2& other);        // <- operador compuesto resta
 
+    Vec2 operator*(float scalar) const;
+    Vec2& operator*=(float scalar);              // <- operador compuesto multiplicacion
 
+    Vec2 operator/(float scalar) const;
+    Vec2& operator/=(float scalar);              // <- operador compuesto division
 
-	// Constructor por defecto
+    bool operator==(const Vec2& other) const;   // opcional, compara igualdad
 
-	Vec2();
-
-
-
-
-
-	// Constructor con parámetros
-
-	Vec2(float x, float y);
-
-
-
-
-
-
-	// Suma de vectores
-
-	Vec2 operator+(const Vec2& other) const;
-
-
-
-
-
-
-	// Resta de vectores
-
-	Vec2 operator-(const Vec2& other) const;
-
-
-
-
-
-
-	// Multiplicación por escalar
-
-	Vec2 operator*(float scalar) const;
-
-
-
-
-
-
-	// División por escalar
-
-	Vec2 operator/(float scalar) const;
-
-
-
-
-
-
-	// Magnitud (longitud del vector)
-
-	float magnitude() const;
-
-
-
-
-
-
-	// Normalización (vector unitario)
-
-	Vec2 normalized() const;
-
-
-
-
-
-
-	// Producto punto
-
-	float dot(const Vec2& other) const;
-
-
-
-
-
-	// Retorna la magnitud al cuadrado 
-	float lengthSquared() const
-	{
-		return x * x + y * y;
-	}
-
-
-
+    float magnitude() const;
+    Vec2 normalized() const;
+    float dot(const Vec2& other) const;
+    float lengthSquared() const;
 };
