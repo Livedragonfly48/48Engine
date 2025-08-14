@@ -53,6 +53,7 @@ bool Render::init(const char* title, int width, int height)
 
 void Render::clear()
 {
+    SDL_SetRenderDrawColor(renderer, 30, 30, 30, 255);
     SDL_RenderClear(renderer);
 }
 

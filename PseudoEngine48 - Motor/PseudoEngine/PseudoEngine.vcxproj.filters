@@ -36,10 +36,13 @@
     <ClCompile Include="PseudoEngineModules\ModulesLowLevel\Collision\CollisionSystem.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="PseudoEngineModules\ModulesLowLevel\Physics\PhysicsBody.cpp">
+    <ClCompile Include="PseudoEngineModules\ModulesLowLevel\Physics\PhysicsSystem.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="PseudoEngineModules\ModulesLowLevel\Physics\PhysicsSystem.cpp">
+    <ClCompile Include="PseudoEngineModules\ModulesHighLevel\ProjectCreator\ProjectManager.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="PseudoEngineModules\ModulesHighLevel\ProjectCreator\ProjectCreatorUI.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
@@ -72,6 +75,12 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="PseudoEngineModules\ModulesLowLevel\VectorDynam\MyVector.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="PseudoEngineModules\ModulesHighLevel\ProjectCreator\ProjectCreatorUI.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="PseudoEngineModules\ModulesHighLevel\ProjectCreator\ProjectManager.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

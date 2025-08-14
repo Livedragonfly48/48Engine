@@ -105,6 +105,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);SDL_MAIN_HANDLED</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>C:\SDL2-devel-2.32.6-VC\SDL2-2.32.6\include;C:\SDL2_image-devel-2.8.8-VC\SDL2_image-2.8.8\include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -121,6 +122,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -131,16 +133,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="PseudoEngine.cpp" />
+    <ClCompile Include="PseudoEngineModules\ModulesHighLevel\ProjectCreator\ProjectCreatorUI.cpp" />
+    <ClCompile Include="PseudoEngineModules\ModulesHighLevel\ProjectCreator\ProjectManager.cpp" />
     <ClCompile Include="PseudoEngineModules\ModulesLowLevel\Collision\CollisionSystem.cpp" />
     <ClCompile Include="PseudoEngineModules\ModulesLowLevel\Input\Input.cpp" />
     <ClCompile Include="PseudoEngineModules\ModulesLowLevel\Math\MathUtils.cpp" />
     <ClCompile Include="PseudoEngineModules\ModulesLowLevel\Math\Vec2.cpp" />
-    <ClCompile Include="PseudoEngineModules\ModulesLowLevel\Physics\PhysicsBody.cpp" />
     <ClCompile Include="PseudoEngineModules\ModulesLowLevel\Physics\PhysicsSystem.cpp" />
     <ClCompile Include="PseudoEngineModules\ModulesLowLevel\Raycast\Raycast.cpp" />
     <ClCompile Include="PseudoEngineModules\ModulesLowLevel\Render\Render.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="PseudoEngineModules\ModulesHighLevel\ProjectCreator\ProjectCreatorUI.h" />
+    <ClInclude Include="PseudoEngineModules\ModulesHighLevel\ProjectCreator\ProjectManager.h" />
     <ClInclude Include="PseudoEngineModules\ModulesLowLevel\Collision\Collider.h" />
     <ClInclude Include="PseudoEngineModules\ModulesLowLevel\Collision\CollisionSystem.h" />
     <ClInclude Include="PseudoEngineModules\ModulesLowLevel\Input\Input.h" />
