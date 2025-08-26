@@ -1,2 +1,13 @@
 ﻿  PseudoEngine.cpp
+  ProjectCreatorUI.cpp
+  ProjectManager.cpp
+  CollisionSystem.cpp
+  Input.cpp
+  MathUtils.cpp
+  Vec2.cpp
+C:\Users\OctoPC\Documents\Ilann Emilio Maya Campos___GitHub\48Engine\PseudoEngine48 - Motor\PseudoEngine\PseudoEngineModules\ModulesLowLevel\Math\Vec2.cpp(114,24): warning C4244: 'return': conversión de 'double' a 'float'; posible pérdida de datos
+  PhysicsSystem.cpp
+  Raycast.cpp
+  Render.cpp
+  Generando código...
   PseudoEngine.vcxproj -> C:\Users\OctoPC\Documents\Ilann Emilio Maya Campos___GitHub\48Engine\PseudoEngine48 - Motor\PseudoEngine\x64\Debug\PseudoEngine.exe

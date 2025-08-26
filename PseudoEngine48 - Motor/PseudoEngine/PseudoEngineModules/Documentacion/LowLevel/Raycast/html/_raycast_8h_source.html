@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Raycast - Modulo: Archivo de código fuente Raycast.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Raycast - Modulo
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_raycast_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Raycast.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_raycast_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;../Math/Vec2.h&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span></div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="};">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="struct_ray.html">    7</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_ray.html">Ray</a></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="struct_ray.html#a83de2be5e4382f2190eba85fdbdb1d9f">   10</a></span>    Vec2 <a class="code hl_variable" href="struct_ray.html#a83de2be5e4382f2190eba85fdbdb1d9f">origin</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="struct_ray.html#a85c2ea15b2045a07cd37de98e3997f8e">   13</a></span>    Vec2 <a class="code hl_variable" href="struct_ray.html#a85c2ea15b2045a07cd37de98e3997f8e">direction</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>};</div>
+</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span></div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="struct_line_segment.html">   19</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_line_segment.html">LineSegment</a></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="struct_line_segment.html#a292647593a3c062368da5c54491fa8b1">   22</a></span>    Vec2 <a class="code hl_variable" href="struct_line_segment.html#a292647593a3c062368da5c54491fa8b1">start</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="struct_line_segment.html#ae4a7b019b7399b6efc9667569a10bd20">   25</a></span>    Vec2 <a class="code hl_variable" href="struct_line_segment.html#ae4a7b019b7399b6efc9667569a10bd20">end</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>};</div>
+</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span></div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="};">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="struct_raycast_result.html">   31</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_raycast_result.html">RaycastResult</a></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="struct_raycast_result.html#aa2f63068ffee00d6c2e9505bc095b6ea">   34</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="struct_raycast_result.html#aa2f63068ffee00d6c2e9505bc095b6ea">hit</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="struct_raycast_result.html#afc9b7524f1a628b3f9d9601239067bb7">   37</a></span>    Vec2 <a class="code hl_variable" href="struct_raycast_result.html#afc9b7524f1a628b3f9d9601239067bb7">point</a> = Vec2(0.0f, 0.0f);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="struct_raycast_result.html#a7f59a9c924637a13f39c414a19762390">   40</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_raycast_result.html#a7f59a9c924637a13f39c414a19762390">distance</a> = 0.0f;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>};</div>
+</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><a class="code hl_struct" href="struct_raycast_result.html">RaycastResult</a> <a class="code hl_function" href="_raycast_8h.html#ac85455469315b6664c88273320b5b997">Raycast</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_ray.html">Ray</a>&amp; ray, <span class="keyword">const</span> <a class="code hl_struct" href="struct_line_segment.html">LineSegment</a>&amp; segment);</div>
+<div class="ttc" id="a_raycast_8h_html_ac85455469315b6664c88273320b5b997"><div class="ttname"><a href="_raycast_8h.html#ac85455469315b6664c88273320b5b997">Raycast</a></div><div class="ttdeci">RaycastResult Raycast(const Ray &amp;ray, const LineSegment &amp;segment)</div><div class="ttdoc">Calcula la interseccion entre un rayo y un segmento de linea.</div><div class="ttdef"><b>Definition</b> Raycast.cpp:12</div></div>
+<div class="ttc" id="astruct_line_segment_html"><div class="ttname"><a href="struct_line_segment.html">LineSegment</a></div><div class="ttdoc">Representa un segmento de linea en 2D.</div><div class="ttdef"><b>Definition</b> Raycast.h:20</div></div>
+<div class="ttc" id="astruct_line_segment_html_a292647593a3c062368da5c54491fa8b1"><div class="ttname"><a href="struct_line_segment.html#a292647593a3c062368da5c54491fa8b1">LineSegment::start</a></div><div class="ttdeci">Vec2 start</div><div class="ttdoc">Punto inicial del segmento.</div><div class="ttdef"><b>Definition</b> Raycast.h:22</div></div>
+<div class="ttc" id="astruct_line_segment_html_ae4a7b019b7399b6efc9667569a10bd20"><div class="ttname"><a href="struct_line_segment.html#ae4a7b019b7399b6efc9667569a10bd20">LineSegment::end</a></div><div class="ttdeci">Vec2 end</div><div class="ttdoc">Punto final del segmento.</div><div class="ttdef"><b>Definition</b> Raycast.h:25</div></div>
+<div class="ttc" id="astruct_ray_html"><div class="ttname"><a href="struct_ray.html">Ray</a></div><div class="ttdoc">Representa un rayo en 2D.</div><div class="ttdef"><b>Definition</b> Raycast.h:8</div></div>
+<div class="ttc" id="astruct_ray_html_a83de2be5e4382f2190eba85fdbdb1d9f"><div class="ttname"><a href="struct_ray.html#a83de2be5e4382f2190eba85fdbdb1d9f">Ray::origin</a></div><div class="ttdeci">Vec2 origin</div><div class="ttdoc">Origen del rayo.</div><div class="ttdef"><b>Definition</b> Raycast.h:10</div></div>
+<div class="ttc" id="astruct_ray_html_a85c2ea15b2045a07cd37de98e3997f8e"><div class="ttname"><a href="struct_ray.html#a85c2ea15b2045a07cd37de98e3997f8e">Ray::direction</a></div><div class="ttdeci">Vec2 direction</div><div class="ttdoc">Direccion del rayo.</div><div class="ttdef"><b>Definition</b> Raycast.h:13</div></div>
+<div class="ttc" id="astruct_raycast_result_html"><div class="ttname"><a href="struct_raycast_result.html">RaycastResult</a></div><div class="ttdoc">Resultado de un raycast.</div><div class="ttdef"><b>Definition</b> Raycast.h:32</div></div>
+<div class="ttc" id="astruct_raycast_result_html_a7f59a9c924637a13f39c414a19762390"><div class="ttname"><a href="struct_raycast_result.html#a7f59a9c924637a13f39c414a19762390">RaycastResult::distance</a></div><div class="ttdeci">float distance</div><div class="ttdoc">Distancia desde el origen hasta el punto de impacto.</div><div class="ttdef"><b>Definition</b> Raycast.h:40</div></div>
+<div class="ttc" id="astruct_raycast_result_html_aa2f63068ffee00d6c2e9505bc095b6ea"><div class="ttname"><a href="struct_raycast_result.html#aa2f63068ffee00d6c2e9505bc095b6ea">RaycastResult::hit</a></div><div class="ttdeci">bool hit</div><div class="ttdoc">Indica si hubo colision.</div><div class="ttdef"><b>Definition</b> Raycast.h:34</div></div>
+<div class="ttc" id="astruct_raycast_result_html_afc9b7524f1a628b3f9d9601239067bb7"><div class="ttname"><a href="struct_raycast_result.html#afc9b7524f1a628b3f9d9601239067bb7">RaycastResult::point</a></div><div class="ttdeci">Vec2 point</div><div class="ttdoc">Punto de impacto, si hubo colision.</div><div class="ttdef"><b>Definition</b> Raycast.h:37</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="_raycast_8h.html">Raycast.h</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

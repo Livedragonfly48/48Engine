@@ -1,0 +1,129 @@
+\doxysection{Referencia de la clase Input}
+\hypertarget{class_input}{}\label{class_input}\index{Input@{Input}}
+
+
+Clase estatica para manejo de entrada de teclado usando SDL.  
+
+
+
+
+{\ttfamily \#include $<$Input.\+h$>$}
+
+\doxysubsubsection*{Métodos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_input_aa879a185c96bd40d0d59524268867d13}{Init}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa el sistema de entrada y obtiene el estado actual del teclado. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_input_a9ee991534eaa3e76f26480dc1207ec91}{Process\+Events}} ()
+\begin{DoxyCompactList}\small\item\em Procesa los eventos de SDL y actualiza el estado del teclado. Debe llamarse cada frame antes de consultar el estado de las teclas. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_input_a6f730bd93702cfca7ed7d2619e4340d7}{Is\+Key\+Pressed}} (SDL\+\_\+\+Scancode key)
+\begin{DoxyCompactList}\small\item\em Verifica si una tecla fue presionada en el frame actual. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_input_a21e529cf7720b4df2906bd44aa73e889}{Is\+Key\+Released}} (SDL\+\_\+\+Scancode key)
+\begin{DoxyCompactList}\small\item\em Verifica si una tecla fue liberada en el frame actual. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_input_a745b3db0f4100ff52f8597b407bcb55e}{Is\+Key\+Held}} (SDL\+\_\+\+Scancode key)
+\begin{DoxyCompactList}\small\item\em Verifica si una tecla esta siendo mantenida presionada. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_input_ae1f8aa4d357ae378f9f9976f52855928}{Shutdown}} ()
+\begin{DoxyCompactList}\small\item\em Libera los recursos usados por el sistema de entrada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase estatica para manejo de entrada de teclado usando SDL. 
+
+\label{doc-func-members}
+\Hypertarget{class_input_doc-func-members}
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{class_input_aa879a185c96bd40d0d59524268867d13}\index{Input@{Input}!Init@{Init}}
+\index{Init@{Init}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily \label{class_input_aa879a185c96bd40d0d59524268867d13} 
+bool Input\+::\+Init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Inicializa el sistema de entrada y obtiene el estado actual del teclado. 
+
+Inicializa el sistema de entrada. Obtiene el estado actual del teclado y reserva memoria para el estado previo.
+
+\begin{DoxyReturn}{Devuelve}
+True si la inicializacion fue exitosa.
+\end{DoxyReturn}
+\Hypertarget{class_input_a745b3db0f4100ff52f8597b407bcb55e}\index{Input@{Input}!IsKeyHeld@{IsKeyHeld}}
+\index{IsKeyHeld@{IsKeyHeld}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{IsKeyHeld()}{IsKeyHeld()}}
+{\footnotesize\ttfamily \label{class_input_a745b3db0f4100ff52f8597b407bcb55e} 
+bool Input\+::\+Is\+Key\+Held (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Scancode}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verifica si una tecla esta siendo mantenida presionada. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em key} & Tecla a verificar (SDL\+\_\+\+Scancode).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+True si la tecla esta presionada actualmente.
+\end{DoxyReturn}
+\Hypertarget{class_input_a6f730bd93702cfca7ed7d2619e4340d7}\index{Input@{Input}!IsKeyPressed@{IsKeyPressed}}
+\index{IsKeyPressed@{IsKeyPressed}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{IsKeyPressed()}{IsKeyPressed()}}
+{\footnotesize\ttfamily \label{class_input_a6f730bd93702cfca7ed7d2619e4340d7} 
+bool Input\+::\+Is\+Key\+Pressed (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Scancode}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verifica si una tecla fue presionada en el frame actual. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em key} & Tecla a verificar (SDL\+\_\+\+Scancode).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+True si la tecla fue presionada este frame.
+\end{DoxyReturn}
+\Hypertarget{class_input_a21e529cf7720b4df2906bd44aa73e889}\index{Input@{Input}!IsKeyReleased@{IsKeyReleased}}
+\index{IsKeyReleased@{IsKeyReleased}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{IsKeyReleased()}{IsKeyReleased()}}
+{\footnotesize\ttfamily \label{class_input_a21e529cf7720b4df2906bd44aa73e889} 
+bool Input\+::\+Is\+Key\+Released (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Scancode}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verifica si una tecla fue liberada en el frame actual. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em key} & Tecla a verificar (SDL\+\_\+\+Scancode).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+True si la tecla fue liberada este frame.
+\end{DoxyReturn}
+\Hypertarget{class_input_a9ee991534eaa3e76f26480dc1207ec91}\index{Input@{Input}!ProcessEvents@{ProcessEvents}}
+\index{ProcessEvents@{ProcessEvents}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{ProcessEvents()}{ProcessEvents()}}
+{\footnotesize\ttfamily \label{class_input_a9ee991534eaa3e76f26480dc1207ec91} 
+void Input\+::\+Process\+Events (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Procesa los eventos de SDL y actualiza el estado del teclado. Debe llamarse cada frame antes de consultar el estado de las teclas. 
+
+Actualiza el estado de todas las teclas. Debe llamarse cada frame antes de consultar Is\+Key\+Pressed/\+Is\+Key\+Released/\+Is\+Key\+Held. \Hypertarget{class_input_ae1f8aa4d357ae378f9f9976f52855928}\index{Input@{Input}!Shutdown@{Shutdown}}
+\index{Shutdown@{Shutdown}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{Shutdown()}{Shutdown()}}
+{\footnotesize\ttfamily \label{class_input_ae1f8aa4d357ae378f9f9976f52855928} 
+void Input\+::\+Shutdown (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Libera los recursos usados por el sistema de entrada. 
+
+
+
+La documentación de esta clase está generada de los siguientes archivos\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_input_8h}{Input.\+h}}\item 
+\mbox{\hyperlink{_input_8cpp}{Input.\+cpp}}\end{DoxyCompactItemize}

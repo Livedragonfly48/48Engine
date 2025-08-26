@@ -1,0 +1,124 @@
+\doxysection{Referencia del archivo Collision\+System.\+h}
+\hypertarget{_collision_system_8h}{}\label{_collision_system_8h}\index{CollisionSystem.h@{CollisionSystem.h}}
+{\ttfamily \#include "{}Collider.\+h"{}}\newline
+\doxysubsubsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_collision_result}{Collision\+Result}}
+\begin{DoxyCompactList}\small\item\em Resultado de una colision entre dos colliders. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_collision_result}{Collision\+Result}} \mbox{\hyperlink{_collision_system_8h_ab35fa5351d0d142e9675fbe4cca6085b}{AABBvs\+AABB}} (const \mbox{\hyperlink{struct_a_a_b_b}{AABB}} \&a, const \mbox{\hyperlink{struct_a_a_b_b}{AABB}} \&b)
+\begin{DoxyCompactList}\small\item\em Detecta colision entre dos AABBs. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_collision_result}{Collision\+Result}} \mbox{\hyperlink{_collision_system_8h_a5ffb297e1689a541efe458f190ec36c3}{Circlevs\+Circle}} (const \mbox{\hyperlink{struct_circle_collider}{Circle\+Collider}} \&a, const \mbox{\hyperlink{struct_circle_collider}{Circle\+Collider}} \&b)
+\begin{DoxyCompactList}\small\item\em Detecta colision entre dos circulos. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_collision_result}{Collision\+Result}} \mbox{\hyperlink{_collision_system_8h_ae65ca968672ec20e5e7553472a6bb123}{AABBvs\+Circle}} (const \mbox{\hyperlink{struct_a_a_b_b}{AABB}} \&box, const \mbox{\hyperlink{struct_circle_collider}{Circle\+Collider}} \&circle)
+\begin{DoxyCompactList}\small\item\em Detecta colision entre un \doxylink{struct_a_a_b_b}{AABB} y un circulo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{_collision_system_8h_doc-func-members}
+\doxysubsection{DocumentaciÃ³n de funciones}
+\Hypertarget{_collision_system_8h_ab35fa5351d0d142e9675fbe4cca6085b}\index{CollisionSystem.h@{CollisionSystem.h}!AABBvsAABB@{AABBvsAABB}}
+\index{AABBvsAABB@{AABBvsAABB}!CollisionSystem.h@{CollisionSystem.h}}
+\doxysubsubsection{\texorpdfstring{AABBvsAABB()}{AABBvsAABB()}}
+{\footnotesize\ttfamily \label{_collision_system_8h_ab35fa5351d0d142e9675fbe4cca6085b} 
+\mbox{\hyperlink{struct_collision_result}{Collision\+Result}} AABBvs\+AABB (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_a_a_b_b}{AABB}} \&}]{a}{, }\item[{const \mbox{\hyperlink{struct_a_a_b_b}{AABB}} \&}]{b}{}\end{DoxyParamCaption})}
+
+
+
+Detecta colision entre dos AABBs. 
+
+
+\begin{DoxyParams}{ParÃ¡metros}
+{\em a} & Primer \doxylink{struct_a_a_b_b}{AABB}.\\
+\hline
+{\em b} & Segundo \doxylink{struct_a_a_b_b}{AABB}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Resultado de la colision incluyendo normal y penetracion.
+\end{DoxyReturn}
+
+
+Detecta colision entre dos AABBs.
+
+
+\begin{DoxyParams}{ParÃ¡metros}
+{\em a} & Primer \doxylink{struct_a_a_b_b}{AABB}.\\
+\hline
+{\em b} & Segundo \doxylink{struct_a_a_b_b}{AABB}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+\doxylink{struct_collision_result}{Collision\+Result} indicando si hubo colisión, el vector normal y la penetración. 
+\end{DoxyReturn}
+\Hypertarget{_collision_system_8h_ae65ca968672ec20e5e7553472a6bb123}\index{CollisionSystem.h@{CollisionSystem.h}!AABBvsCircle@{AABBvsCircle}}
+\index{AABBvsCircle@{AABBvsCircle}!CollisionSystem.h@{CollisionSystem.h}}
+\doxysubsubsection{\texorpdfstring{AABBvsCircle()}{AABBvsCircle()}}
+{\footnotesize\ttfamily \label{_collision_system_8h_ae65ca968672ec20e5e7553472a6bb123} 
+\mbox{\hyperlink{struct_collision_result}{Collision\+Result}} AABBvs\+Circle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_a_a_b_b}{AABB}} \&}]{box}{, }\item[{const \mbox{\hyperlink{struct_circle_collider}{Circle\+Collider}} \&}]{circle}{}\end{DoxyParamCaption})}
+
+
+
+Detecta colision entre un \doxylink{struct_a_a_b_b}{AABB} y un circulo. 
+
+
+\begin{DoxyParams}{ParÃ¡metros}
+{\em box} & Caja \doxylink{struct_a_a_b_b}{AABB}.\\
+\hline
+{\em circle} & Circulo.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Resultado de la colision incluyendo normal y penetracion.
+\end{DoxyReturn}
+
+
+Detecta colision entre un \doxylink{struct_a_a_b_b}{AABB} y un circulo.
+
+
+\begin{DoxyParams}{ParÃ¡metros}
+{\em box} & \doxylink{struct_collider}{Collider} de tipo \doxylink{struct_a_a_b_b}{AABB}.\\
+\hline
+{\em circle} & \doxylink{struct_collider}{Collider} de tipo círculo.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+\doxylink{struct_collision_result}{Collision\+Result} indicando si hubo colisión, el vector normal y la penetración. 
+\end{DoxyReturn}
+\Hypertarget{_collision_system_8h_a5ffb297e1689a541efe458f190ec36c3}\index{CollisionSystem.h@{CollisionSystem.h}!CirclevsCircle@{CirclevsCircle}}
+\index{CirclevsCircle@{CirclevsCircle}!CollisionSystem.h@{CollisionSystem.h}}
+\doxysubsubsection{\texorpdfstring{CirclevsCircle()}{CirclevsCircle()}}
+{\footnotesize\ttfamily \label{_collision_system_8h_a5ffb297e1689a541efe458f190ec36c3} 
+\mbox{\hyperlink{struct_collision_result}{Collision\+Result}} Circlevs\+Circle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_circle_collider}{Circle\+Collider}} \&}]{a}{, }\item[{const \mbox{\hyperlink{struct_circle_collider}{Circle\+Collider}} \&}]{b}{}\end{DoxyParamCaption})}
+
+
+
+Detecta colision entre dos circulos. 
+
+
+\begin{DoxyParams}{ParÃ¡metros}
+{\em a} & Primer circulo.\\
+\hline
+{\em b} & Segundo circulo.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Resultado de la colision incluyendo normal y penetracion.
+\end{DoxyReturn}
+
+
+Detecta colision entre dos circulos.
+
+
+\begin{DoxyParams}{ParÃ¡metros}
+{\em a} & Primer círculo.\\
+\hline
+{\em b} & Segundo círculo.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+\doxylink{struct_collision_result}{Collision\+Result} indicando si hubo colisión, el vector normal y la penetración. 
+\end{DoxyReturn}

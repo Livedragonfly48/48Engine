@@ -1,0 +1,207 @@
+\doxysection{Referencia de la clase Render}
+\hypertarget{class_render}{}\label{class_render}\index{Render@{Render}}
+
+
+Clase que maneja la renderizacion usando SDL. Permite inicializar ventana, dibujar texturas y limpiar/presentar frames.  
+
+
+
+
+{\ttfamily \#include $<$Render.\+h$>$}
+
+\doxysubsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_render_a8610cc11739ef679b5935dd819021351}{Render}} ()
+\begin{DoxyCompactList}\small\item\em Constructor de la clase \doxylink{class_render}{Render}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_render_ab0f4b917605cb15902f8d045a4197faf}{\texorpdfstring{$\sim$}{\string~}\+Render}} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase \doxylink{class_render}{Render}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_render_a2e5a2e27aed4ccc65383009b18722570}{init}} (const char \texorpdfstring{$\ast$}{*}title, int width, int height)
+\begin{DoxyCompactList}\small\item\em Inicializa la ventana y el renderer de SDL. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_render_a79647e82f82b76fbfc01c9dee38e9d1f}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Limpia el renderer (preparandolo para dibujar un nuevo frame). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_render_a0897ca618fc24c34905187a8a64bcaa9}{present}} ()
+\begin{DoxyCompactList}\small\item\em Muestra en pantalla todo lo que fue dibujado desde el ultimo clear. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_render_a5e620526ec8dc6ce65b6d6d8f7879531}{destroy}} ()
+\begin{DoxyCompactList}\small\item\em Libera los recursos de SDL (window y renderer). \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_render_a8aa42f5ddc61b1441fe829a99bab7d42}{load\+Texture}} (const std\+::string \&file\+Path)
+\begin{DoxyCompactList}\small\item\em Carga una textura desde un archivo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_render_a7195a29d7f8746b82461d16d6106279f}{draw\+Texture}} (SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}texture, int x, int y, int w, int h)
+\begin{DoxyCompactList}\small\item\em Dibuja una textura en la pantalla en la posicion y tama�o especificados. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_render_a2e008d21aad69c2f83fc05420ee47dea}{get\+Renderer}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el puntero al renderer de SDL. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase que maneja la renderizacion usando SDL. Permite inicializar ventana, dibujar texturas y limpiar/presentar frames. 
+
+\label{doc-constructors}
+\Hypertarget{class_render_doc-constructors}
+\doxysubsection{Documentación de constructores y destructores}
+\Hypertarget{class_render_a8610cc11739ef679b5935dd819021351}\index{Render@{Render}!Render@{Render}}
+\index{Render@{Render}!Render@{Render}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily \label{class_render_a8610cc11739ef679b5935dd819021351} 
+Render\+::\+Render (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructor de la clase \doxylink{class_render}{Render}. 
+
+Constructor de \doxylink{class_render}{Render}. Inicializa punteros de window y renderer a nullptr. \Hypertarget{class_render_ab0f4b917605cb15902f8d045a4197faf}\index{Render@{Render}!````~Render@{\texorpdfstring{$\sim$}{\string~}Render}}
+\index{````~Render@{\texorpdfstring{$\sim$}{\string~}Render}!Render@{Render}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Render()}{\string~Render()}}
+{\footnotesize\ttfamily \label{class_render_ab0f4b917605cb15902f8d045a4197faf} 
+Render\+::\texorpdfstring{$\sim$}{\string~}\+Render (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor de la clase \doxylink{class_render}{Render}. 
+
+Destructor de \doxylink{class_render}{Render}. Llama a \doxylink{class_render_a5e620526ec8dc6ce65b6d6d8f7879531}{destroy()} para liberar recursos. 
+
+\label{doc-func-members}
+\Hypertarget{class_render_doc-func-members}
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{class_render_a79647e82f82b76fbfc01c9dee38e9d1f}\index{Render@{Render}!clear@{clear}}
+\index{clear@{clear}!Render@{Render}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{class_render_a79647e82f82b76fbfc01c9dee38e9d1f} 
+void Render\+::clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Limpia el renderer (preparandolo para dibujar un nuevo frame). 
+
+Limpia el renderer para un nuevo frame. \Hypertarget{class_render_a5e620526ec8dc6ce65b6d6d8f7879531}\index{Render@{Render}!destroy@{destroy}}
+\index{destroy@{destroy}!Render@{Render}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily \label{class_render_a5e620526ec8dc6ce65b6d6d8f7879531} 
+void Render\+::destroy (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Libera los recursos de SDL (window y renderer). 
+
+Libera recursos de SDL y SDL\+\_\+image. \Hypertarget{class_render_a7195a29d7f8746b82461d16d6106279f}\index{Render@{Render}!drawTexture@{drawTexture}}
+\index{drawTexture@{drawTexture}!Render@{Render}}
+\doxysubsubsection{\texorpdfstring{drawTexture()}{drawTexture()}}
+{\footnotesize\ttfamily \label{class_render_a7195a29d7f8746b82461d16d6106279f} 
+void Render\+::draw\+Texture (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}}]{texture}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{int}]{w}{, }\item[{int}]{h}{}\end{DoxyParamCaption})}
+
+
+
+Dibuja una textura en la pantalla en la posicion y tama�o especificados. 
+
+Dibuja la textura en la posicion y tama�o indicados.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em texture} & Textura a dibujar.\\
+\hline
+{\em x} & Coordenada X de la esquina superior izquierda.\\
+\hline
+{\em y} & Coordenada Y de la esquina superior izquierda.\\
+\hline
+{\em w} & Ancho de la textura.\\
+\hline
+{\em h} & Alto de la textura.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_render_a2e008d21aad69c2f83fc05420ee47dea}\index{Render@{Render}!getRenderer@{getRenderer}}
+\index{getRenderer@{getRenderer}!Render@{Render}}
+\doxysubsubsection{\texorpdfstring{getRenderer()}{getRenderer()}}
+{\footnotesize\ttfamily \label{class_render_a2e008d21aad69c2f83fc05420ee47dea} 
+SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*} Render\+::get\+Renderer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el puntero al renderer de SDL. 
+
+\begin{DoxyReturn}{Devuelve}
+Puntero a SDL\+\_\+\+Renderer.
+\end{DoxyReturn}
+\Hypertarget{class_render_a2e5a2e27aed4ccc65383009b18722570}\index{Render@{Render}!init@{init}}
+\index{init@{init}!Render@{Render}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{class_render_a2e5a2e27aed4ccc65383009b18722570} 
+bool Render\+::init (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{title}{, }\item[{int}]{width}{, }\item[{int}]{height}{}\end{DoxyParamCaption})}
+
+
+
+Inicializa la ventana y el renderer de SDL. 
+
+Inicializa SDL y SDL\+\_\+image, crea la ventana y el renderer.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em title} & Titulo de la ventana.\\
+\hline
+{\em width} & Ancho de la ventana.\\
+\hline
+{\em height} & Alto de la ventana.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+True si la inicializacion fue exitosa.
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Parámetros}
+{\em title} & Titulo de la ventana.\\
+\hline
+{\em width} & Ancho de la ventana.\\
+\hline
+{\em height} & Alto de la ventana.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+True si la inicializacion fue exitosa, false en caso contrario.
+\end{DoxyReturn}
+\Hypertarget{class_render_a8aa42f5ddc61b1441fe829a99bab7d42}\index{Render@{Render}!loadTexture@{loadTexture}}
+\index{loadTexture@{loadTexture}!Render@{Render}}
+\doxysubsubsection{\texorpdfstring{loadTexture()}{loadTexture()}}
+{\footnotesize\ttfamily \label{class_render_a8aa42f5ddc61b1441fe829a99bab7d42} 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} Render\+::load\+Texture (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path}{}\end{DoxyParamCaption})}
+
+
+
+Carga una textura desde un archivo. 
+
+Carga una imagen desde archivo y la convierte en textura de SDL.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em file\+Path} & Ruta del archivo de la textura.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Puntero a SDL\+\_\+\+Texture si la carga fue exitosa, nullptr en caso contrario.
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Parámetros}
+{\em file\+Path} & Ruta del archivo de imagen.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Puntero a SDL\+\_\+\+Texture si la carga fue exitosa, nullptr en caso contrario.
+\end{DoxyReturn}
+\Hypertarget{class_render_a0897ca618fc24c34905187a8a64bcaa9}\index{Render@{Render}!present@{present}}
+\index{present@{present}!Render@{Render}}
+\doxysubsubsection{\texorpdfstring{present()}{present()}}
+{\footnotesize\ttfamily \label{class_render_a0897ca618fc24c34905187a8a64bcaa9} 
+void Render\+::present (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Muestra en pantalla todo lo que fue dibujado desde el ultimo clear. 
+
+Presenta el contenido del renderer en pantalla. 
+
+La documentación de esta clase está generada de los siguientes archivos\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_render_8h}{Render.\+h}}\item 
+\mbox{\hyperlink{_render_8cpp}{Render.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,65 @@
+\doxysection{Referencia del archivo Raycast.\+h}
+\hypertarget{_raycast_8h}{}\label{_raycast_8h}\index{Raycast.h@{Raycast.h}}
+{\ttfamily \#include "{}../\+Math/\+Vec2.\+h"{}}\newline
+\doxysubsubsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_ray}{Ray}}
+\begin{DoxyCompactList}\small\item\em Representa un rayo en 2D. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_line_segment}{Line\+Segment}}
+\begin{DoxyCompactList}\small\item\em Representa un segmento de linea en 2D. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_raycast_result}{Raycast\+Result}}
+\begin{DoxyCompactList}\small\item\em Resultado de un raycast. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_raycast_result}{Raycast\+Result}} \mbox{\hyperlink{_raycast_8h_ac85455469315b6664c88273320b5b997}{Raycast}} (const \mbox{\hyperlink{struct_ray}{Ray}} \&ray, const \mbox{\hyperlink{struct_line_segment}{Line\+Segment}} \&segment)
+\begin{DoxyCompactList}\small\item\em Calcula la interseccion entre un rayo y un segmento de linea. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{_raycast_8h_doc-func-members}
+\doxysubsection{Documentación de funciones}
+\Hypertarget{_raycast_8h_ac85455469315b6664c88273320b5b997}\index{Raycast.h@{Raycast.h}!Raycast@{Raycast}}
+\index{Raycast@{Raycast}!Raycast.h@{Raycast.h}}
+\doxysubsubsection{\texorpdfstring{Raycast()}{Raycast()}}
+{\footnotesize\ttfamily \label{_raycast_8h_ac85455469315b6664c88273320b5b997} 
+\mbox{\hyperlink{struct_raycast_result}{Raycast\+Result}} Raycast (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_ray}{Ray}} \&}]{ray}{, }\item[{const \mbox{\hyperlink{struct_line_segment}{Line\+Segment}} \&}]{segment}{}\end{DoxyParamCaption})}
+
+
+
+Calcula la interseccion entre un rayo y un segmento de linea. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em ray} & Rayo a evaluar.\\
+\hline
+{\em segment} & Segmento de linea a evaluar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Resultado del raycast indicando si hubo colision, punto y distancia.
+\end{DoxyReturn}
+
+
+Calcula la interseccion entre un rayo y un segmento de linea.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em ray} & Rayo a evaluar.\\
+\hline
+{\em segment} & Segmento de linea a evaluar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Resultado del raycast indicando si hubo colision, el punto de impacto y la distancia desde el origen. 
+\end{DoxyReturn}
+Punto de inicio del rayo.
+
+Direccion del rayo.
+
+Punto inicial del segmento de linea.
+
+Vector que representa el segmento.
+
+Producto cruzado entre r y s.

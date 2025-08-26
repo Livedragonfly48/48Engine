@@ -1,0 +1,20 @@
+64x native tolos Developer Command Prompt
+
+C:\Program Files\Microsoft Visual Studio\2022\Community>cd C:\Users\OctoPC\Documents\Ilann Emilio Maya Campos___GitHub\48Engine\PseudoEngine48 - Motor\PseudoEngine
+
+dir
+
+MSBuild PseudoEngine.sln /p:Configuration=Debug
+
+cd x64\Debug
+
+PseudoEngine.exe
+
+
+cd "C:\Users\OctoPC\Documents\Ilann Emilio Maya Campos___GitHub\48Engine\PseudoEngine48 - Motor\PseudoEngine"
+x64\Debug\PseudoEngine.exe
+
+
+
+
+

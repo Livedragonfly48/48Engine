@@ -3,14 +3,19 @@
 #include "../Collision/CollisionSystem.h"
 #include "../Math/Vec2.h"
 
-
+/// <summary>
+/// Agrega un cuerpo dinamico al sistema de fisicas.
+/// </summary>
+/// <param name="body">Puntero al cuerpo fisico a agregar.</param>
 void PhysicsSystem::addBody(PhysicsBody* body)
 {
     bodies.push_back(body);
 }
 
-
-
+/// <summary>
+/// Elimina un cuerpo dinamico del sistema de fisicas.
+/// </summary>
+/// <param name="body">Puntero al cuerpo fisico a eliminar.</param>
 void PhysicsSystem::removeBody(PhysicsBody* body)
 {
     for (size_t i = 0; i < bodies.getSize(); ++i)
@@ -23,8 +28,11 @@ void PhysicsSystem::removeBody(PhysicsBody* body)
     }
 }
 
-
-
+/// <summary>
+/// Actualiza todos los cuerpos dinamicos, aplica gravedad y mueve los cuerpos.
+/// Luego verifica colisiones entre cuerpos dinamicos y colliders estaticos.
+/// </summary>
+/// <param name="deltaTime">Tiempo transcurrido desde el ultimo frame (en segundos).</param>
 void PhysicsSystem::update(float deltaTime)
 {
     for (size_t i = 0; i < bodies.getSize(); ++i)
@@ -54,9 +62,13 @@ void PhysicsSystem::update(float deltaTime)
     }
 }
 
+/// <summary>
+/// Verifica colisiones entre todos los cuerpos dinamicos y colliders estaticos.
+/// Maneja triggers y ajuste de posiciones/velocidades de los cuerpos.
+/// </summary>
 void PhysicsSystem::checkCollisions()
 {
-
+    // Colisiones entre cuerpos dinamicos
     for (size_t i = 0; i < bodies.getSize(); ++i)
     {
         PhysicsBody* a = bodies[i];
@@ -126,9 +138,7 @@ void PhysicsSystem::checkCollisions()
         }
     }
 
-
-
-
+    // Colisiones con colliders estaticos
     for (size_t i = 0; i < bodies.getSize(); ++i)
     {
         PhysicsBody* body = bodies[i];
@@ -161,5 +171,3 @@ void PhysicsSystem::checkCollisions()
         }
     }
 }
-
-

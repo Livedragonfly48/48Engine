@@ -2,16 +2,31 @@
 #include <SDL_image.h>
 #include <iostream>
 
+/// <summary>
+/// Constructor de Render.
+/// Inicializa punteros de window y renderer a nullptr.
+/// </summary>
 Render::Render()
     : window(nullptr), renderer(nullptr)
 {
 }
 
+/// <summary>
+/// Destructor de Render.
+/// Llama a destroy() para liberar recursos.
+/// </summary>
 Render::~Render()
 {
     destroy();
 }
 
+/// <summary>
+/// Inicializa SDL y SDL_image, crea la ventana y el renderer.
+/// </summary>
+/// <param name="title">Titulo de la ventana.</param>
+/// <param name="width">Ancho de la ventana.</param>
+/// <param name="height">Alto de la ventana.</param>
+/// <returns>True si la inicializacion fue exitosa, false en caso contrario.</returns>
 bool Render::init(const char* title, int width, int height)
 {
     if (SDL_Init(SDL_INIT_VIDEO) != 0)
@@ -45,23 +60,32 @@ bool Render::init(const char* title, int width, int height)
         return false;
     }
 
-    //OPCIONAL FONDO NEGRO
+    // OPCIONAL: fondo negro
     SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
 
     return true;
 }
 
+/// <summary>
+/// Limpia el renderer para un nuevo frame.
+/// </summary>
 void Render::clear()
 {
     SDL_SetRenderDrawColor(renderer, 30, 30, 30, 255);
     SDL_RenderClear(renderer);
 }
 
+/// <summary>
+/// Presenta el contenido del renderer en pantalla.
+/// </summary>
 void Render::present()
 {
     SDL_RenderPresent(renderer);
 }
 
+/// <summary>
+/// Libera recursos de SDL y SDL_image.
+/// </summary>
 void Render::destroy()
 {
     if (renderer)
@@ -79,6 +103,11 @@ void Render::destroy()
     SDL_Quit();
 }
 
+/// <summary>
+/// Carga una imagen desde archivo y la convierte en textura de SDL.
+/// </summary>
+/// <param name="filePath">Ruta del archivo de imagen.</param>
+/// <returns>Puntero a SDL_Texture si la carga fue exitosa, nullptr en caso contrario.</returns>
 SDL_Texture* Render::loadTexture(const std::string& filePath)
 {
     SDL_Surface* surface = IMG_Load(filePath.c_str());
@@ -100,6 +129,14 @@ SDL_Texture* Render::loadTexture(const std::string& filePath)
     return texture;
 }
 
+/// <summary>
+/// Dibuja la textura en la posicion y tamaño indicados.
+/// </summary>
+/// <param name="texture">Textura a dibujar.</param>
+/// <param name="x">Coordenada X de la esquina superior izquierda.</param>
+/// <param name="y">Coordenada Y de la esquina superior izquierda.</param>
+/// <param name="w">Ancho de la textura.</param>
+/// <param name="h">Alto de la textura.</param>
 void Render::drawTexture(SDL_Texture* texture, int x, int y, int w, int h)
 {
     if (!texture) return;

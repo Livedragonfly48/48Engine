@@ -1,0 +1,27 @@
+\doxysection{Project\+Manager.\+h}
+\hypertarget{_project_manager_8h_source}{}\label{_project_manager_8h_source}\mbox{\hyperlink{_project_manager_8h}{Ir a la documentación de este archivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_project_manager}{ProjectManager}}\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{static}\ std::vector<std::string>\ \mbox{\hyperlink{class_project_manager_a0d95c3298bed9c6abb7ab658d641ead6}{ListProjects}}();}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_project_manager_a0dae72b36b2305150e4f976f68bd0c6c}{CreateProject}}(\textcolor{keyword}{const}\ std::string\&\ name);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_project_manager_a182a49edd84dc44b09a88aa60b6fd235}{DeleteProject}}(\textcolor{keyword}{const}\ std::string\&\ name);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_project_manager_a5f95868d065c43646bb2520be3d27f86}{ProjectExists}}(\textcolor{keyword}{const}\ std::string\&\ name);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_project_manager_a68f44577e1710c6b6b39d3cf15b7d76e}{RunProject}}(\textcolor{keyword}{const}\ std::string\&\ name);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{static}\ std::string\ \mbox{\hyperlink{class_project_manager_ab28ddd10c826af8f8e5fc9ea9ea54ffd}{GetProjectsPath}}();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ CreateFileWithContent(\textcolor{keyword}{const}\ std::string\&\ path,\ \textcolor{keyword}{const}\ std::string\&\ content);}
+\DoxyCodeLine{00044\ \};}
+
+\end{DoxyCode}
