@@ -1,4 +1,3 @@
-var searchData=
-[
-  ['end_0',['end',['../struct_line_segment.html#ae4a7b019b7399b6efc9667569a10bd20',1,'LineSegment']]]
-];
+version https://git-lfs.github.com/spec/v1
+oid sha256:9485950b673ef750f902485f5f05436a3b554a31186851e099d3d15239789785
+size 127

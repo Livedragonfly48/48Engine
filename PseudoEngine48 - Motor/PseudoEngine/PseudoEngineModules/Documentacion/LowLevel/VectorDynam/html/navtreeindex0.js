@@ -1,31 +1,3 @@
-var NAVTREEINDEX0 =
-{
-"_my_vector_8h.html":[1,0,0],
-"_my_vector_8h_source.html":[1,0,0],
-"annotated.html":[0,0],
-"class_my_vector.html":[0,0,0],
-"class_my_vector.html#a2c73623c89727375d0b3abff25a9c2d8":[0,0,0,7],
-"class_my_vector.html#a3dbbf1e99a6c487a98f6ee251e6c36f1":[0,0,0,10],
-"class_my_vector.html#a4a4a32abfe8917612561fd8d3919bd2d":[0,0,0,6],
-"class_my_vector.html#a52fca0ca78c0b0e700c51212168f80f3":[0,0,0,15],
-"class_my_vector.html#a5db108c7488c908b25e0dff8c82a5b67":[0,0,0,11],
-"class_my_vector.html#a5e2dc2a708e624c4d5ee8275a3f6830f":[0,0,0,13],
-"class_my_vector.html#a8504e546c42adf17402c86cc4bf9cd36":[0,0,0,9],
-"class_my_vector.html#a8f6c36029da3c2bf3e31f52ff003ad85":[0,0,0,2],
-"class_my_vector.html#a954391fd935c573e70b9255cc7b871aa":[0,0,0,12],
-"class_my_vector.html#a9cac978b874f88c49d674f51e251ee41":[0,0,0,4],
-"class_my_vector.html#aa896e95bb435535bdcc0b3e7bcb7f6fe":[0,0,0,16],
-"class_my_vector.html#ab6f60e9bd0dc3e0f43f612b71c8ed491":[0,0,0,8],
-"class_my_vector.html#abe59f181259ff63fa583f4bd87a9737e":[0,0,0,1],
-"class_my_vector.html#ac356762c5ced52c0d934476cef32e472":[0,0,0,0],
-"class_my_vector.html#adabde890d749f012b0c4dd1531f2fe80":[0,0,0,5],
-"class_my_vector.html#aeaedcd10f27b64d04b5c432fa1832671":[0,0,0,14],
-"class_my_vector.html#aed24327ced8246d0e73c4452ba245a76":[0,0,0,17],
-"class_my_vector.html#afcde6f89e0fc20872cfee2a2a52e7570":[0,0,0,3],
-"classes.html":[0,1],
-"files.html":[1,0],
-"functions.html":[0,2,0],
-"functions_func.html":[0,2,1],
-"index.html":[],
-"pages.html":[]
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:73b5bc86f4f42dcc368103d0df35f093480a068e247f54f888abb8192ddc587c
+size 1543

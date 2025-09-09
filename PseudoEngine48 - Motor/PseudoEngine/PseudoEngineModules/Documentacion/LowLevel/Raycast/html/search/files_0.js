@@ -1,5 +1,3 @@
-var searchData=
-[
-  ['raycast_2ecpp_0',['Raycast.cpp',['../_raycast_8cpp.html',1,'']]],
-  ['raycast_2eh_1',['Raycast.h',['../_raycast_8h.html',1,'']]]
-];
+version https://git-lfs.github.com/spec/v1
+oid sha256:3640f87a9665204f0b9af6be44f21d809e9d3ec5434455c1fe3c02a5b04a4d8a
+size 159

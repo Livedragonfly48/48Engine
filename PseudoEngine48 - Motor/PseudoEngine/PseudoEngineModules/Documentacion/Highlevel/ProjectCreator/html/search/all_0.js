@@ -1,4 +1,3 @@
-var searchData=
-[
-  ['createproject_0',['CreateProject',['../class_project_manager.html#a0dae72b36b2305150e4f976f68bd0c6c',1,'ProjectManager']]]
-];
+version https://git-lfs.github.com/spec/v1
+oid sha256:e8525416733df977cfca270676100435d7c361e3835f2d906f300fff88371ec4
+size 152

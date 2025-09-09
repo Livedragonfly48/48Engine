@@ -1,4 +1,3 @@
-var searchData=
-[
-  ['getrenderer_0',['getRenderer',['../class_render.html#a2e008d21aad69c2f83fc05420ee47dea',1,'Render']]]
-];
+version https://git-lfs.github.com/spec/v1
+oid sha256:3193891e138405e6379b243653ee3e17fa42563f6cfc5cf7d3902e7b013e907a
+size 131

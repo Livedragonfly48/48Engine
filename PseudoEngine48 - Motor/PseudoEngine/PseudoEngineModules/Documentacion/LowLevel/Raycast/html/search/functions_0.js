@@ -1,4 +1,3 @@
-var searchData=
-[
-  ['raycast_0',['Raycast',['../_raycast_8cpp.html#ac85455469315b6664c88273320b5b997',1,'Raycast(const Ray &amp;ray, const LineSegment &amp;segment):&#160;Raycast.cpp'],['../_raycast_8h.html#ac85455469315b6664c88273320b5b997',1,'Raycast(const Ray &amp;ray, const LineSegment &amp;segment):&#160;Raycast.cpp']]]
-];
+version https://git-lfs.github.com/spec/v1
+oid sha256:471c66bb454a307e4ec4279a4043292686c33acf21930c8ea881bd8c358e0e96
+size 335

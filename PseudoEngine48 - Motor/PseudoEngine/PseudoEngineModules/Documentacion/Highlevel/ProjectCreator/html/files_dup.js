@@ -1,7 +1,3 @@
-var files_dup =
-[
-    [ "ProjectCreatorUI.cpp", "_project_creator_u_i_8cpp.html", null ],
-    [ "ProjectCreatorUI.h", "_project_creator_u_i_8h.html", "_project_creator_u_i_8h" ],
-    [ "ProjectManager.cpp", "_project_manager_8cpp.html", null ],
-    [ "ProjectManager.h", "_project_manager_8h.html", "_project_manager_8h" ]
-];
+version https://git-lfs.github.com/spec/v1
+oid sha256:8e15ae85e816f91800f90cc0af908aa96ab79c71289dd2bb4955f9b841d03a88
+size 331

@@ -1,14 +1,3 @@
-var NAVTREEINDEX0 =
-{
-"_input_8cpp.html":[1,0,0],
-"_input_8h.html":[1,0,1],
-"_input_8h_source.html":[1,0,1],
-"annotated.html":[0,0],
-"class_input.html":[0,0,0],
-"classes.html":[0,1],
-"files.html":[1,0],
-"functions.html":[0,2,0],
-"functions_func.html":[0,2,1],
-"index.html":[],
-"pages.html":[]
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:c29d9edf84c5d179ce40258509267e3ab9c86239426edfb1cb0c8d403d7bb833
+size 310

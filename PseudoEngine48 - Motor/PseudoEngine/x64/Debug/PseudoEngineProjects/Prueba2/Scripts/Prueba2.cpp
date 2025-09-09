@@ -1,15 +1,3 @@
-#include <iostream>
-#include "../../Math/MathUtils.h"
-
-void Update() {
-    float x = -5.5f;
-    std::cout << "absf(-5.5) = " << absf(x) << std::endl;
-}
-
-int main(int argc, char* argv[]) {
-    std::cout << "Proyecto Prueba2 iniciado!" << std::endl;
-    while (true) {
-        Update();
-    }
-    return 0;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:cb67d13bda1753fb7685c677660a9c0f4fd37b80475691e9299399b3c9e82cb7
+size 322

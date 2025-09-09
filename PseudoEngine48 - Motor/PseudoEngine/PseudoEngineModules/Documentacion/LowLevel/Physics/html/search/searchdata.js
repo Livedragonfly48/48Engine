@@ -1,27 +1,3 @@
-var indexSectionsWithContent =
-{
-  0: "abcgiprstuvw",
-  1: "p",
-  2: "p",
-  3: "aprsu",
-  4: "abcgipstuvw"
-};
-
-var indexSectionNames =
-{
-  0: "all",
-  1: "classes",
-  2: "files",
-  3: "functions",
-  4: "variables"
-};
-
-var indexSectionLabels =
-{
-  0: "Todos",
-  1: "Clases",
-  2: "Archivos",
-  3: "Funciones",
-  4: "Variables"
-};
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:da7c58be03be6b593d4c230ee4ba6bfac3b417306cf3a922b5faf1e82f7c9ff1
+size 357

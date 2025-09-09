@@ -1,4 +1,3 @@
-var searchData=
-[
-  ['myvector_0',['MyVector',['../class_my_vector.html#ac356762c5ced52c0d934476cef32e472',1,'MyVector::MyVector()'],['../class_my_vector.html#a8f6c36029da3c2bf3e31f52ff003ad85',1,'MyVector::MyVector(const MyVector &amp;other)']]]
-];
+version https://git-lfs.github.com/spec/v1
+oid sha256:58f6aee9f88c73e5dd02ab28513d2fc0204344042259de1bcd90d9f2ba901581
+size 254

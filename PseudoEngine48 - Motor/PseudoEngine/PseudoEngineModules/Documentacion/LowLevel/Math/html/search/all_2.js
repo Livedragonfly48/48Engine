@@ -1,4 +1,3 @@
-var searchData=
-[
-  ['dot_0',['dot',['../struct_vec2.html#a4c3b9419a29ea25dcd6dc1492c4c740d',1,'Vec2']]]
-];
+version https://git-lfs.github.com/spec/v1
+oid sha256:4621e82b4106ff7046b7870ae8cd9935234461f47cc37845bdd7169f639aefab
+size 112

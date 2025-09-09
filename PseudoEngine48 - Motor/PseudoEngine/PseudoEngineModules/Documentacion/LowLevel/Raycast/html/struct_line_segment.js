@@ -1,5 +1,3 @@
-var struct_line_segment =
-[
-    [ "end", "struct_line_segment.html#ae4a7b019b7399b6efc9667569a10bd20", null ],
-    [ "start", "struct_line_segment.html#a292647593a3c062368da5c54491fa8b1", null ]
-];
+version https://git-lfs.github.com/spec/v1
+oid sha256:89994f82715df819aace0b00adebe225f44a060810e31ec2423f89ea1f3c8968
+size 201

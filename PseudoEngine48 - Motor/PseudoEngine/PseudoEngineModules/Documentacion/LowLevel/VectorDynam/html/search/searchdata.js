@@ -1,24 +1,3 @@
-var indexSectionsWithContent =
-{
-  0: "bcegimop~",
-  1: "m",
-  2: "m",
-  3: "bcegimop~"
-};
-
-var indexSectionNames =
-{
-  0: "all",
-  1: "classes",
-  2: "files",
-  3: "functions"
-};
-
-var indexSectionLabels =
-{
-  0: "Todos",
-  1: "Clases",
-  2: "Archivos",
-  3: "Funciones"
-};
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:a1d5625831fa2d5e14140581e34547b72506eaad41b164c1a23433ebf69096bd
+size 299

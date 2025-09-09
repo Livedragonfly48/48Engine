@@ -1,27 +1,3 @@
-var indexSectionsWithContent =
-{
-  0: "acdilmnosvxy",
-  1: "v",
-  2: "mv",
-  3: "acdilmnosv",
-  4: "xy"
-};
-
-var indexSectionNames =
-{
-  0: "all",
-  1: "classes",
-  2: "files",
-  3: "functions",
-  4: "variables"
-};
-
-var indexSectionLabels =
-{
-  0: "Todos",
-  1: "Clases",
-  2: "Archivos",
-  3: "Funciones",
-  4: "Variables"
-};
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:15b162336b4591bcff5208aed0745f26aa876140217b4fc1c35b0f0aa43a0828
+size 354

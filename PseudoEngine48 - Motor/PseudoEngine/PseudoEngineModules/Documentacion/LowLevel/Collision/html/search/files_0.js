@@ -1,6 +1,3 @@
-var searchData=
-[
-  ['collider_2eh_0',['Collider.h',['../_collider_8h.html',1,'']]],
-  ['collisionsystem_2ecpp_1',['CollisionSystem.cpp',['../_collision_system_8cpp.html',1,'']]],
-  ['collisionsystem_2eh_2',['CollisionSystem.h',['../_collision_system_8h.html',1,'']]]
-];
+version https://git-lfs.github.com/spec/v1
+oid sha256:2311b8394aa1cd8037302fcc5c1dfeaa7f575c0acfc2c9c43e346c7d8ede0838
+size 277

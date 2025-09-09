@@ -1,8 +1,3 @@
-var hierarchy =
-[
-    [ "Collider", "struct_collider.html", [
-      [ "AABB", "struct_a_a_b_b.html", null ],
-      [ "CircleCollider", "struct_circle_collider.html", null ]
-    ] ],
-    [ "CollisionResult", "struct_collision_result.html", null ]
-];
+version https://git-lfs.github.com/spec/v1
+oid sha256:ee29a0a9f63f3c79ed5c31d6bbc699311514af46caf7578d1fbb59000a88d66a
+size 255

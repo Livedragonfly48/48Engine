@@ -1,23 +1,3 @@
-var NAVTREEINDEX0 =
-{
-"_render_8cpp.html":[1,0,0],
-"_render_8h.html":[1,0,1],
-"_render_8h_source.html":[1,0,1],
-"annotated.html":[0,0],
-"class_render.html":[0,0,0],
-"class_render.html#a0897ca618fc24c34905187a8a64bcaa9":[0,0,0,8],
-"class_render.html#a2e008d21aad69c2f83fc05420ee47dea":[0,0,0,5],
-"class_render.html#a2e5a2e27aed4ccc65383009b18722570":[0,0,0,6],
-"class_render.html#a5e620526ec8dc6ce65b6d6d8f7879531":[0,0,0,3],
-"class_render.html#a7195a29d7f8746b82461d16d6106279f":[0,0,0,4],
-"class_render.html#a79647e82f82b76fbfc01c9dee38e9d1f":[0,0,0,2],
-"class_render.html#a8610cc11739ef679b5935dd819021351":[0,0,0,0],
-"class_render.html#a8aa42f5ddc61b1441fe829a99bab7d42":[0,0,0,7],
-"class_render.html#ab0f4b917605cb15902f8d045a4197faf":[0,0,0,1],
-"classes.html":[0,1],
-"files.html":[1,0],
-"functions.html":[0,2,0],
-"functions_func.html":[0,2,1],
-"index.html":[],
-"pages.html":[]
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:d59dd00883f8b38ece2522c0117ae03bf65affd1ae58c80f646ddbc6b7e9db2d
+size 908

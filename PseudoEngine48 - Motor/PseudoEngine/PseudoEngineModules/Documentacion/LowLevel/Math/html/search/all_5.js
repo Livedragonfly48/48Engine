@@ -1,6 +1,3 @@
-var searchData=
-[
-  ['magnitude_0',['magnitude',['../struct_vec2.html#afdf4c645f0df071759a34d312c50aa3b',1,'Vec2']]],
-  ['mathutils_2ecpp_1',['MathUtils.cpp',['../_math_utils_8cpp.html',1,'']]],
-  ['mathutils_2eh_2',['MathUtils.h',['../_math_utils_8h.html',1,'']]]
-];
+version https://git-lfs.github.com/spec/v1
+oid sha256:781aba5cb5f09b28fa858608a3169d256d08a40515c61e32815d094c68e9e790
+size 274

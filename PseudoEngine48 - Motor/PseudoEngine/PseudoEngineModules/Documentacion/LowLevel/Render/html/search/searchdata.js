@@ -1,24 +1,3 @@
-var indexSectionsWithContent =
-{
-  0: "cdgilpr~",
-  1: "r",
-  2: "r",
-  3: "cdgilpr~"
-};
-
-var indexSectionNames =
-{
-  0: "all",
-  1: "classes",
-  2: "files",
-  3: "functions"
-};
-
-var indexSectionLabels =
-{
-  0: "Todos",
-  1: "Clases",
-  2: "Archivos",
-  3: "Funciones"
-};
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:b6809a898eeb7d5644d5e74b176022624ea3292be0b43e9a35c6ad53fab0d2a3
+size 297

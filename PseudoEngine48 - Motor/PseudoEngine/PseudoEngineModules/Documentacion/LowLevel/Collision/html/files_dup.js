@@ -1,6 +1,3 @@
-var files_dup =
-[
-    [ "Collider.h", "_collider_8h.html", "_collider_8h" ],
-    [ "CollisionSystem.cpp", "_collision_system_8cpp.html", "_collision_system_8cpp" ],
-    [ "CollisionSystem.h", "_collision_system_8h.html", "_collision_system_8h" ]
-];
+version https://git-lfs.github.com/spec/v1
+oid sha256:dd92a5d191fdda04a18b0b56a3abeb7e7098f012c647a50674a533c63cd78c5e
+size 253

@@ -1,5 +1,3 @@
-var searchData=
-[
-  ['projectcreatorui_0',['ProjectCreatorUI',['../class_project_creator_u_i.html',1,'']]],
-  ['projectmanager_1',['ProjectManager',['../class_project_manager.html',1,'']]]
-];
+version https://git-lfs.github.com/spec/v1
+oid sha256:c95d5aaf3b5d0c107ccf008911ad77597ba532469e9f3f3b908a322bfa07a4a3
+size 197

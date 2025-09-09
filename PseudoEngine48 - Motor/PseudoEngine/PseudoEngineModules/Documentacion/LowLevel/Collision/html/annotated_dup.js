@@ -1,7 +1,3 @@
-var annotated_dup =
-[
-    [ "AABB", "struct_a_a_b_b.html", "struct_a_a_b_b" ],
-    [ "CircleCollider", "struct_circle_collider.html", "struct_circle_collider" ],
-    [ "Collider", "struct_collider.html", "struct_collider" ],
-    [ "CollisionResult", "struct_collision_result.html", "struct_collision_result" ]
-];
+version https://git-lfs.github.com/spec/v1
+oid sha256:59c54cc2acb0736d11973d8ce88917817182fcbb8da9dc5c693c4483eef6daef
+size 318

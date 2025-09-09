@@ -1,33 +1,3 @@
-var indexSectionsWithContent =
-{
-  0: "achmnprt~",
-  1: "ac",
-  2: "c",
-  3: "acm~",
-  4: "chnprt",
-  5: "c",
-  6: "ac"
-};
-
-var indexSectionNames =
-{
-  0: "all",
-  1: "classes",
-  2: "files",
-  3: "functions",
-  4: "variables",
-  5: "enums",
-  6: "enumvalues"
-};
-
-var indexSectionLabels =
-{
-  0: "Todos",
-  1: "Clases",
-  2: "Archivos",
-  3: "Funciones",
-  4: "Variables",
-  5: "Enumeraciones",
-  6: "Valores de enumeraciones"
-};
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:9538ea3b76c4f3379c804269b92916c819f7d159f0298bd7aaf18e227b840b33
+size 464

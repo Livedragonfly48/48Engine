@@ -1,5 +1,3 @@
-var searchData=
-[
-  ['pop_5fback_0',['pop_back',['../class_my_vector.html#aa896e95bb435535bdcc0b3e7bcb7f6fe',1,'MyVector']]],
-  ['push_5fback_1',['push_back',['../class_my_vector.html#aed24327ced8246d0e73c4452ba245a76',1,'MyVector']]]
-];
+version https://git-lfs.github.com/spec/v1
+oid sha256:a3a6e90746437814224c8c798b1475ba7e51ed17bd4f5a03f1f800045059a393
+size 243

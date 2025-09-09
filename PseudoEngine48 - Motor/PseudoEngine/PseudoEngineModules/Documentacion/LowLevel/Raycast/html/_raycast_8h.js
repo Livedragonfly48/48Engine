@@ -1,7 +1,3 @@
-var _raycast_8h =
-[
-    [ "Ray", "struct_ray.html", "struct_ray" ],
-    [ "LineSegment", "struct_line_segment.html", "struct_line_segment" ],
-    [ "RaycastResult", "struct_raycast_result.html", "struct_raycast_result" ],
-    [ "Raycast", "_raycast_8h.html#ac85455469315b6664c88273320b5b997", null ]
-];
+version https://git-lfs.github.com/spec/v1
+oid sha256:8eaf17aa4611d382b5aa9fb3e8e8f529120b22bb9be7889f19d7bb048f64eabc
+size 308

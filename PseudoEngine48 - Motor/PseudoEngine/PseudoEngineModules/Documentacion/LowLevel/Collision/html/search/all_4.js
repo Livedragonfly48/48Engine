@@ -1,4 +1,3 @@
-var searchData=
-[
-  ['normal_0',['normal',['../struct_collision_result.html#a5702ae1d55cc9376d86a3b30bfd36c11',1,'CollisionResult']]]
-];
+version https://git-lfs.github.com/spec/v1
+oid sha256:6137711fd379afa421b8be333472938703923d0024664f835b1b5bb2e1c6fa1d
+size 141

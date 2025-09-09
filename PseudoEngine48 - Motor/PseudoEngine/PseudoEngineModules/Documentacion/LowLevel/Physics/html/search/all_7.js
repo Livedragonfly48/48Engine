@@ -1,6 +1,3 @@
-var searchData=
-[
-  ['setaabb_0',['setAABB',['../class_physics_body.html#a84a2afb154b24190e3932a00ca6ee717',1,'PhysicsBody']]],
-  ['setcircle_1',['setCircle',['../class_physics_body.html#a6593555df2b06aa6904fba7eca2c8698',1,'PhysicsBody']]],
-  ['staticcolliders_2',['staticColliders',['../struct_physics_system.html#ab064d929d98eb9841212da6a8d11af23',1,'PhysicsSystem']]]
-];
+version https://git-lfs.github.com/spec/v1
+oid sha256:5db9216c1774bafcf2d64266995d1d17297b08fd260f9c09866e56dce1660cf3
+size 381

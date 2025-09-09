@@ -1,5 +1,3 @@
-var annotated_dup =
-[
-    [ "PhysicsBody", "class_physics_body.html", "class_physics_body" ],
-    [ "PhysicsSystem", "struct_physics_system.html", "struct_physics_system" ]
-];
+version https://git-lfs.github.com/spec/v1
+oid sha256:329176854110dceb5265d2319834ce257c238736ac705605756974968c2994a6
+size 179

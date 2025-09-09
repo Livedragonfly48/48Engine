@@ -1,4 +1,3 @@
-var searchData=
-[
-  ['insert_0',['insert',['../class_my_vector.html#a954391fd935c573e70b9255cc7b871aa',1,'MyVector']]]
-];
+version https://git-lfs.github.com/spec/v1
+oid sha256:495f2ae180ff1b0a5bb2304ebbc2de6ff8f97cd0eab411e1e01c840d7f8b0ee9
+size 126
